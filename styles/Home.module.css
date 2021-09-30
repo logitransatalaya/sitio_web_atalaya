@@ -7,6 +7,39 @@
 
 .slider {
 	background-color: red;
-	width: 100%;
-	min-height: 20vh;
+}
+
+.img1 {
+	background: url('/primeraR.png');
+}
+
+.img2 {
+	background: url('/segundaR.png');
+}
+
+.img3 {
+	background: url('/primeraR.png');
+}
+
+.img {
+	height: 30rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 550px) {
+	.img1 {
+		background: url('/primera.png');
+	}
+	.img2 {
+		background: url('/segunda.png');
+	}
+	.img3 {
+		background: url('/tercera.png');
+	}
+	.img {
+		height: 40rem;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 }
