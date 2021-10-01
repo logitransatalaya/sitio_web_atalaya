@@ -20,7 +20,7 @@ const servicios = () => {
 				</h1>
 			</Row>
 			<Cards />
-			<Button text={'¡SOLICITA UNA COTIZACION!'} />
+			<Button text={'¡SOLICITA UNA COTIZACION!'} to={'/contactenos'} />
 		</div>
 	)
 }

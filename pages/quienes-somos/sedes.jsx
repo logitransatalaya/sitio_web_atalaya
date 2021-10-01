@@ -57,7 +57,7 @@ const sedes = () => {
 					</Card>
 				</Row>
 			</div>
-			<Button text={'!Solicita una cotizacion¡'} />
+			<Button text={'!Solicita una cotizacion¡'} to={'/contactenos'} />
 		</div>
 	)
 }

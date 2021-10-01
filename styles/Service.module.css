@@ -41,6 +41,9 @@
 	left: calc(34%);
 }
 .button_service {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
 	color: cornsilk;
 	background-color: #ff6c0c;
 	width: 20rem;
