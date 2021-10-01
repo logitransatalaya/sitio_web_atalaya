@@ -18,30 +18,45 @@ export const NavAtalaya = () => {
 				</span>
 				<ul className={styles.menu}>
 					<li>
-						<a href=''>INICIO</a>
+						<Link href='/'>
+							<a>INICIO</a>
+						</Link>
 					</li>
 					<li className={styles.subMenu}>
-						<a href=''>QUIENES SOMOS</a>
+						<a href='#'>QUIENES SOMOS</a>
 						<ul className={styles.listSubMenu}>
 							<li>
-								<a href=''>SOBRE NOSOTROS</a>
-							</li>
-							<Link href='/quienes-somos/sedes'>
-								<a href=''>SEDES</a>
-							</Link>
-							<li>
-								<a href=''>SEGURIDAD VIAL</a>
+								<Link href='#/quienes-somos/sobre-nosotros'>
+									<a>SOBRE NOSOTROS</a>
+								</Link>
 							</li>
 							<li>
-								<a href=''>SISTEMA DE GESTIÓN INTEGRADO</a>
+								<Link href='/quienes-somos/sedes'>
+									<a>SEDES</a>
+								</Link>
+							</li>
+							<li>
+								<Link href='/quienes-somos/seguridad-vial'>
+									<a>SEGURIDAD VIAL</a>
+								</Link>
+							</li>
+							<li>
+								<Link href='/quienes-somos/sistema-gestion-integrado'>
+									<a>SISTEMA DE GESTIÓN INTEGRADO</a>
+								</Link>
 							</li>
 						</ul>
 					</li>
-					<Link href='/servicios'>
-						<a href=''>SERVICIOS</a>
-					</Link>
 					<li>
-						<a href=''>CONTACTENOS</a>
+						<Link href='/servicios'>
+							<a>SERVICIOS</a>
+						</Link>
+					</li>
+
+					<li>
+						<Link href='/contactenos'>
+							<a>CONTACTENOS</a>
+						</Link>
 					</li>
 				</ul>
 			</nav>
