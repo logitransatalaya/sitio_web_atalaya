@@ -1,0 +1,34 @@
+.style_footer {
+	width: 100%;
+}
+
+.section1_footer {
+	background-color: #02254c;
+	color: #fff;
+}
+
+.section2_footer {
+	background-color: #011c3a;
+	color: #fff;
+}
+
+.link_father {
+	color: #ff6c0c;
+}
+
+.link_son {
+	margin-bottom: 5px;
+}
+
+.link_son small a {
+	color: inherit;
+	text-decoration: none;
+	display: inline-block;
+	transition: all 0.5s;
+	padding-left: 3px;
+}
+
+.link_son small a:hover {
+	color: #ff6c0c;
+	transform: translateX(10px);
+}
