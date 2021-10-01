@@ -1,0 +1,81 @@
+.navbar {
+	height: 80px;
+	display: flex;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+	z-index: 10000;
+}
+
+.logo {
+	margin-left: 1rem;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0;
+}
+
+.menu li {
+	margin-right: 1rem;
+	list-style: none;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 0.8rem;
+	transition: color 0.3s;
+}
+
+.menu li a:hover {
+	color: #ff6c0c;
+}
+
+.subMenu {
+	position: relative;
+}
+
+.listSubMenu {
+	position: absolute;
+	width: 300px;
+	margin-top: -200%;
+	opacity: 0;
+	transition: margin-top 0.3s, opacity 1s;
+	background-color: #fff;
+	padding: 1rem;
+}
+
+.subMenu:hover .listSubMenu {
+	margin-top: 0;
+	opacity: 1;
+}
+
+@media (max-width: 600px) {
+	.navbar {
+		flex-direction: column;
+		height: 100vh;
+		justify-content: center;
+		width: 50%;
+		gap: 1rem;
+		margin-left: -100%;
+	}
+
+	.menu {
+		flex-direction: column;
+	}
+
+	.handleMenu {
+		display: block;
+	}
+
+	.logoMovil {
+		display: block;
+	}
+}
