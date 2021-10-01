@@ -72,6 +72,7 @@
 @media (max-width: 600px) {
 	.navbar {
 		flex-direction: column;
+		position: fixed;
 		height: 100vh;
 		justify-content: center;
 		width: 50%;
