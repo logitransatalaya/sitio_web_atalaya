@@ -8,7 +8,7 @@ export const FooterAtalaya = () => {
 		<footer className={styles.footer}>
 			<div className={styles.content1}>
 				<div className={styles.box_logo}>
-					<img src='/logo.png' alt='' />
+					<img src='/logoblanco.png' alt='' />
 				</div>
 				<div className={styles.content_icons}>
 					<div className={styles.box_icon}>

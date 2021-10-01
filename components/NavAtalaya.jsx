@@ -14,7 +14,7 @@ export const NavAtalaya = () => {
 				}
 			>
 				<span className={styles.logo}>
-					<img src='/logo.png' alt='' />
+					<img src='/logoazul.png' alt='' />
 				</span>
 				<ul className={styles.menu}>
 					<li>
