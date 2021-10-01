@@ -2,7 +2,7 @@ import { FooterAtalaya } from 'components/FooterAtalaya'
 import { NavAtalaya } from 'components/NavAtalaya'
 import Head from 'next/head'
 import styled from 'styles/Home.module.css'
-import { Service } from '../components/Service'
+
 import { Slider } from 'components/Home/Slider'
 
 export default function Home() {
@@ -17,7 +17,6 @@ export default function Home() {
 				<link rel='icon' href='/favicon.png' />
 			</Head>
 			<Slider />
-			<Service />
 		</div>
 	)
 }
