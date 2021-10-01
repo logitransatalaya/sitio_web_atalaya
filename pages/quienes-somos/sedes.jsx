@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const sedes = () => {
+const sedes = () => {
 	return (
 		<div>
 			<h1>sedes</h1>
 		</div>
 	)
 }
+
+export default sedes
