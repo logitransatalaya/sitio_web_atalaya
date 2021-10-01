@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styles from 'styles/Nav.module.css'
-import Link from 'next/link'
 
 export const NavAtalaya = () => {
 	const [stateNav, setStateNav] = useState(true)
@@ -13,7 +12,9 @@ export const NavAtalaya = () => {
 						: `${styles.navbar} ${styles.navbarShow}`
 				}
 			>
-				<span className={styles.logo}>Logo</span>
+				<span className={styles.logo}>
+					<img src='/logo.png' alt='' />
+				</span>
 				<ul className={styles.menu}>
 					<li>
 						<a href=''>INICIO</a>
