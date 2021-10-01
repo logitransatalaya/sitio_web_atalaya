@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styled from 'styles/Home.module.css'
 import { Slider } from 'components/Home/Slider'
 import { HomeCard } from 'components/Home/Card'
+import { Container } from 'components/Container'
 
 export default function Home() {
 	return (
@@ -15,15 +17,45 @@ export default function Home() {
 				<link rel='icon' href='/favicon.png' />
 			</Head>
 			<Slider />
-			<h2>
-				Ofrecemos soluciones especializadas
-				<br />y adaptadas a las necesidades de los clientes
-			</h2>
-			<div className={styled.CardContainer}>
-				<HomeCard icon='users' title='QUIÉNES SOMOS' />
-				<HomeCard icon='box' title='MISIÓN' />
-				<HomeCard icon='truck' title='VISIÓN' />
-			</div>
+			<Container>
+				<h2>
+					Ofrecemos soluciones especializadas
+					<br />y adaptadas a las necesidades de los clientes
+				</h2>
+				<div className={styled.CardContainer}>
+					<HomeCard icon='users' title='QUIÉNES SOMOS' />
+					<HomeCard icon='box' title='MISIÓN' />
+					<HomeCard icon='truck' title='VISIÓN' />
+				</div>
+				<div className={`${styled.NuestroAlcance}`}>
+					<div>
+						<Image
+							src='/imgAlcance.jpeg'
+							width='540'
+							height='370'
+							alt='Logotipo de atalaya'
+						/>
+					</div>
+					<div>
+						<h3>
+							<b>Nuestro alcance</b>
+						</h3>
+						<br />
+						<p>
+							En <b>ATALAYA</b> resolvemos todas sus necesidades
+							logísticas a través de medios aéreos, marítimos y
+							terrestre, para ello contamos con un equipo humano
+							competente, y una <b>infraestructura tecnológica</b>{' '}
+							a la vanguardia que soporta nuestra operación.
+						</p>
+						<h5>
+							<a href='https://www.logitransatalaya.com/nosotros'>
+								Conoce más
+							</a>
+						</h5>
+					</div>
+				</div>
+			</Container>
 		</div>
 	)
 }
