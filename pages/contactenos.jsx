@@ -1,9 +1,13 @@
+import FormAbout from 'components/Contactenos/FormAbout'
 import React from 'react'
+import styled from 'styles/About.module.css'
 
-export const contactenos = () => {
+const contactenos = () => {
 	return (
-		<div>
-			<h1>contactenos</h1>
+		<div className={styled.formContainer}>
+			<FormAbout />
 		</div>
 	)
 }
+
+export default contactenos
