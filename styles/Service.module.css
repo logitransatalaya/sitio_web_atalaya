@@ -50,6 +50,11 @@
 	padding: 0.5rem;
 	border-radius: 1.3rem;
 	border: none;
+	transition: color 1.5s, transform 1.5s;
+}
+.button_service:hover {
+	color: cornsilk;
+	transform: scale(1.1);
 }
 .button_service_center {
 	display: flex;

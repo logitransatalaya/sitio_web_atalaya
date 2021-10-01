@@ -17,7 +17,7 @@ export default function Home() {
 			<Slider />
 			<h2>
 				Ofrecemos soluciones especializadas
-				<br />y adaptadas a las necesidades de los clientes
+				<br /> y adaptadas a las necesidades de los clientes
 			</h2>
 			<div className={styled.CardContainer}>
 				<HomeCard icon='users' title='QUIÉNES SOMOS' />
