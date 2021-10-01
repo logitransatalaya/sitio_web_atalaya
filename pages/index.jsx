@@ -20,22 +20,9 @@ export default function Home() {
 				<br />y adaptadas a las necesidades de los clientes
 			</h2>
 			<div className={styled.CardContainer}>
-				<HomeCard
-					icon='users'
-					title='QUIÉNES SOMOS'
-					description='Logística y transporte ATALAYA S.A.S es una empresa que ha sido conformada con el propósito de cerrar las brechas sociales para gestar cambios transculturales y así aportar a la construcción de una Colombia justa.
-ATALAYA S.A.S está conformada por un gran equipo de trabajo íntegro.'
-				/>
-				<HomeCard
-					icon='box'
-					title='MISIÓN'
-					description='Como ATALAYA somos una compañia que brinda soluciones en logística integral de altos estándares de calidad, siendo así un pilar regional en el liderazgo de productos de primera, a través de un poderoso énfasis social.'
-				/>
-				<HomeCard
-					icon='truck'
-					title='VISIÓN'
-					description='ATALAYA S.A.S en el año 2025 tendrá presencia en los 32 departamentos de Colombia para lograr posicionarnos en el mercado latinoamericano abriendo lazos a nivel mundial; liderando el mercado tecnológico, como uno de los máximos exponentes de la logística integral.'
-				/>
+				<HomeCard icon='users' title='QUIÉNES SOMOS' />
+				<HomeCard icon='box' title='MISIÓN' />
+				<HomeCard icon='truck' title='VISIÓN' />
 			</div>
 		</div>
 	)
