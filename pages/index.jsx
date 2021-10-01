@@ -1,3 +1,5 @@
+import { FooterAtalaya } from 'components/FooterAtalaya'
+import { NavAtalaya } from 'components/NavAtalaya'
 import Head from 'next/head'
 import styled from 'styles/Home.module.css'
 import { Service } from '../components/Service'
