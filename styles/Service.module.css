@@ -1,0 +1,14 @@
+.title_main {
+	font-family: sans-serif;
+	font-size: 40px;
+	color: #053b77;
+	text-align: center;
+}
+.button_service {
+	color: cornsilk;
+	background-color: #ff6c0c;
+	width: 300px;
+	padding: 8px;
+	border-radius: 20px;
+	border: none;
+}
