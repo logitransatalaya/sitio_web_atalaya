@@ -1,3 +1,4 @@
+import { Button } from 'components/Button'
 import { CardService } from 'components/CardService'
 import React from 'react'
 import { Row, Col, Card } from 'react-bootstrap'
@@ -26,13 +27,7 @@ const servicios = () => {
 				<CardService image={'/mensajeria.png'} />
 				<CardService image={'/software.png'} />
 			</div>
-			<div className='mt-1 mb-5'>
-				<div className={styles.button_service_center}>
-					<button className={styles.button_service}>
-						!Solicita una cotizacion¡
-					</button>
-				</div>
-			</div>
+			<Button />
 		</div>
 	)
 }

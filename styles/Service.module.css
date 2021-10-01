@@ -3,13 +3,33 @@
 	color: #053b77;
 	text-align: center;
 }
+
+.card_service {
+	width: 100%;
+	display: flex;
+	border-radius: 1em;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.card_service:hover img {
+	transform: scale(1.1);
+}
+
+.images {
+	width: 100%;
+	transition: transform 0.5s;
+}
+
 .subtitle_main {
 	font-size: 2.1rem;
 }
+
 .form_title {
 	color: #063061;
 	position: relative;
 }
+
 .form_title::before {
 	content: '';
 	position: absolute;
@@ -33,7 +53,7 @@
 	justify-content: center;
 }
 .container_service {
-	margin-top: 8rem;
+	margin-top: 2rem;
 }
 
 .cards {
@@ -44,17 +64,13 @@
 
 .row {
 	margin: 0 auto;
-	gap: 1rem;
+	gap: 1.8rem;
 	display: grid;
 	min-height: calc(100vh - 110px);
 	grid-template-columns: repeat(4, 300px);
 	grid-template-rows: repeat(2, 300px);
 	justify-content: center;
 	padding-top: 5rem;
-}
-
-.images {
-	width: 100%;
 }
 
 @media (max-width: 1270px) {
