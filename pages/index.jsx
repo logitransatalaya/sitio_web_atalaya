@@ -4,6 +4,7 @@ import styled from 'styles/Home.module.css'
 import { Slider } from 'components/Home/Slider'
 import { HomeCard } from 'components/Home/Card'
 import { Container } from 'components/Container'
+import { Cards } from 'components/Cards'
 
 export default function Home() {
 	return (
@@ -55,6 +56,7 @@ export default function Home() {
 						</h5>
 					</div>
 				</div>
+				<Cards />
 			</Container>
 		</div>
 	)
