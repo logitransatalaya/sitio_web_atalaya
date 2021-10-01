@@ -3,13 +3,7 @@ import styles from '../styles/Service.module.css'
 
 export const CardService = ({ image }) => {
 	return (
-		<div
-			style={{
-				width: '100%',
-				display: 'flex',
-				justifyContent: 'center'
-			}}
-		>
+		<div className={styles.card_service}>
 			<img className={`${styles.images}`} src={image} />
 		</div>
 	)

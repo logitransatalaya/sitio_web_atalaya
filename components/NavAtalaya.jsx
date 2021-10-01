@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { useState } from 'react'
 import styles from 'styles/Nav.module.css'
 
@@ -25,9 +26,9 @@ export const NavAtalaya = () => {
 							<li>
 								<a href=''>SOBRE NOSOTROS</a>
 							</li>
-							<li>
+							<Link href='/quienes-somos/sedes'>
 								<a href=''>SEDES</a>
-							</li>
+							</Link>
 							<li>
 								<a href=''>SEGURIDAD VIAL</a>
 							</li>
@@ -36,9 +37,9 @@ export const NavAtalaya = () => {
 							</li>
 						</ul>
 					</li>
-					<li>
+					<Link href='/servicios'>
 						<a href=''>SERVICIOS</a>
-					</li>
+					</Link>
 					<li>
 						<a href=''>CONTACTENOS</a>
 					</li>

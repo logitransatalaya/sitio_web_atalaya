@@ -27,7 +27,35 @@ export const HomeCard = ({ icon, title, description }) => {
 			</div>
 			<div style={{ padding: 0, marginTop: '1rem' }}>
 				<h3>{title}</h3>
-				<div>{description}</div>
+				{icon === 'users' && (
+					<div>
+						<strong>Logística y transporte ATALAYA S.A.S</strong> es
+						una empresa que ha sido conformada con el propósito de
+						cerrar las brechas sociales para gestar cambios
+						transculturales y así aportar a la construcción de una
+						Colombia justa. <strong>ATALAYA S.A.S</strong> está
+						conformada por un gran equipo de trabajo íntegro.
+					</div>
+				)}
+				{icon === 'box' && (
+					<div>
+						Como <strong>ATALAYA S.A.S</strong> somos una compañia
+						que brinda soluciones en logística integral de altos
+						estándares de calidad, siendo así un pilar regional en
+						el liderazgo de productos de primera, a través de un
+						poderoso énfasis social.
+					</div>
+				)}
+				{icon === 'truck' && (
+					<div>
+						<strong>ATALAYA S.A.S</strong> en el año 2025 tendrá
+						presencia en los 32 departamentos de Colombia para
+						lograr posicionarnos en el mercado latinoamericano
+						abriendo lazos a nivel mundial; liderando el mercado
+						tecnológico, como uno de los máximos exponentes de la
+						logística integral.
+					</div>
+				)}
 			</div>
 			<div>
 				<Link href='/'>
