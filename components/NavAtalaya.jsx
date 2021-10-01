@@ -1,12 +1,21 @@
+import Link from 'next/link'
 import React, { useState } from 'react'
 import styles from 'styles/Nav.module.css'
-import Link from 'next/link'
 
 export const NavAtalaya = () => {
+	const [stateNav, setStateNav] = useState(true)
 	return (
 		<>
-			<nav className={styles.navbar}>
-				<span className={styles.logo}>Logo</span>
+			<nav
+				className={
+					stateNav
+						? styles.navbar
+						: `${styles.navbar} ${styles.navbarShow}`
+				}
+			>
+				<span className={styles.logo}>
+					<img src='/logo.png' alt='' />
+				</span>
 				<ul className={styles.menu}>
 					<li>
 						<a href=''>INICIO</a>
@@ -17,9 +26,9 @@ export const NavAtalaya = () => {
 							<li>
 								<a href=''>SOBRE NOSOTROS</a>
 							</li>
-							<li>
+							<Link href='/quienes-somos/sedes'>
 								<a href=''>SEDES</a>
-							</li>
+							</Link>
 							<li>
 								<a href=''>SEGURIDAD VIAL</a>
 							</li>
@@ -28,14 +37,20 @@ export const NavAtalaya = () => {
 							</li>
 						</ul>
 					</li>
-					<li>
+					<Link href='/servicios'>
 						<a href=''>SERVICIOS</a>
-					</li>
+					</Link>
 					<li>
 						<a href=''>CONTACTENOS</a>
 					</li>
 				</ul>
 			</nav>
+			<div
+				className={styles.icons_handleMenu}
+				onClick={() => setStateNav(!stateNav)}
+			>
+				{stateNav ? '=' : 'X'}
+			</div>
 		</>
 	)
 }

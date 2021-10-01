@@ -12,7 +12,11 @@
 }
 
 .logo {
+	width: 200px;
 	margin-left: 1rem;
+}
+.logo img {
+	width: 100%;
 }
 
 .menu {
@@ -57,14 +61,36 @@
 	opacity: 1;
 }
 
+.icons_handleMenu {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	color: orange;
+	z-index: 1000;
+	font-weight: bold;
+	font-size: 2rem;
+	cursor: pointer;
+	display: none;
+}
+
 @media (max-width: 600px) {
 	.navbar {
 		flex-direction: column;
+		position: fixed;
 		height: 100vh;
 		justify-content: center;
 		width: 50%;
 		gap: 1rem;
 		margin-left: -100%;
+		transition: margin-left 1s;
+	}
+
+	.navbarShow {
+		margin-left: 0;
+	}
+
+	.icons_handleMenu {
+		display: block;
 	}
 
 	.menu {
