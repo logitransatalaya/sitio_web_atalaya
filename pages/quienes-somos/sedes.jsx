@@ -7,12 +7,13 @@ import styles from '../../styles/Service.module.css'
 
 const sedes = () => {
 	return (
-		<div className=''>
+		<div>
 			<Row>
 				<h1
 					className={`mt-4 ${styles.title_main} ${styles.form_title} `}
 				>
-					En Atalaya S.A.S contamos con las siguientes sedes
+					En <span>Atalaya S.A.S</span> contamos con las siguientes
+					sedes
 					<h1 />
 					<h1 />
 					en el territorio nacional:
@@ -57,7 +58,7 @@ const sedes = () => {
 					</Card>
 				</Row>
 			</div>
-			<Button text={'!Solicita una cotizacion¡'} />
+			<Button text={'!Solicita una cotizacion¡'} to={'/contactenos'} />
 		</div>
 	)
 }
