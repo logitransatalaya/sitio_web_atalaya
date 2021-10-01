@@ -2,16 +2,22 @@ import React from 'react'
 import { CardGroup, Card, Row, Col } from 'react-bootstrap'
 import style from 'styles/sedes.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Button } from 'components/Button'
+import styles from '../../styles/Service.module.css'
 
 const sedes = () => {
 	return (
-		<div>
-			<h1 className={`${style.main_title}`}>
-				En Atalaya S.A.S contamos con las siguientes sedes
-				<h1 />
-				<h1 />
-				en el territorio nacional:
-			</h1>
+		<div className=''>
+			<Row>
+				<h1
+					className={`mt-4 ${styles.title_main} ${styles.form_title} `}
+				>
+					En Atalaya S.A.S contamos con las siguientes sedes
+					<h1 />
+					<h1 />
+					en el territorio nacional:
+				</h1>
+			</Row>
 			<div className={`${style.container}`}>
 				<Row xs={1} md={2} className={`${style.CardContainer}`}>
 					<Card className={`${style.cards}`}>
@@ -51,6 +57,7 @@ const sedes = () => {
 					</Card>
 				</Row>
 			</div>
+			<Button text={'!Solicita una cotizacion¡'} />
 		</div>
 	)
 }
