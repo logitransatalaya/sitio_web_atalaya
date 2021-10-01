@@ -3,9 +3,16 @@ import styles from 'styles/Nav.module.css'
 import Link from 'next/link'
 
 export const NavAtalaya = () => {
+	const [stateNav, setStateNav] = useState(true)
 	return (
 		<>
-			<nav className={styles.navbar}>
+			<nav
+				className={
+					stateNav
+						? styles.navbar
+						: `${styles.navbar} ${styles.navbarShow}`
+				}
+			>
 				<span className={styles.logo}>Logo</span>
 				<ul className={styles.menu}>
 					<li>
@@ -36,6 +43,12 @@ export const NavAtalaya = () => {
 					</li>
 				</ul>
 			</nav>
+			<div
+				className={styles.icons_handleMenu}
+				onClick={() => setStateNav(!stateNav)}
+			>
+				{stateNav ? '=' : 'X'}
+			</div>
 		</>
 	)
 }
