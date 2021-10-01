@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import styles from 'styles/Nav.module.css'
+import Link from 'next/link'
 
 export const NavAtalaya = () => {
 	return (
@@ -10,7 +11,11 @@ export const NavAtalaya = () => {
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
 				<Navbar.Collapse id='basic-navbar-nav'>
 					<Nav className='me-auto'>
-						<Nav.Link href='#home'>INICIO</Nav.Link>
+						<Nav.Link>
+							<Link href='/'>
+								<a>INICIO</a>
+							</Link>
+						</Nav.Link>
 						<NavDropdown
 							title='QUIENES SOMOS'
 							id='basic-nav-dropdown'
@@ -28,7 +33,11 @@ export const NavAtalaya = () => {
 								SISTEMA DE GESTIÓN INTEGRADO
 							</NavDropdown.Item>
 						</NavDropdown>
-						<Nav.Link href='#link'>SERVICIOS</Nav.Link>
+						<Nav.Link href='#link'>
+							<Link href='/servicios'>
+								<a>SERVICIOS</a>
+							</Link>
+						</Nav.Link>
 						<Nav.Link href='#link'>CONTÁCTENOS</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
