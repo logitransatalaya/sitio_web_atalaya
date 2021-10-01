@@ -17,19 +17,11 @@ a {
 	box-sizing: border-box;
 }
 
-.title_line {
-	margin-bottom: 3em;
+h1,
+h2,
+h2,
+h4,
+h5,
+h6 {
 	color: #063061;
-	position: relative;
-}
-
-.title_line::before {
-	content: '';
-	position: absolute;
-	display: block;
-	height: 3px;
-	width: 40%;
-	background: #ff6c0c;
-	bottom: -20px;
-	left: calc(30%);
 }
