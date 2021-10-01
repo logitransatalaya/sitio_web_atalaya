@@ -1,9 +1,7 @@
-import { FooterAtalaya } from 'components/FooterAtalaya'
-import { NavAtalaya } from 'components/NavAtalaya'
 import Head from 'next/head'
 import styled from 'styles/Home.module.css'
-import { Service } from '../components/Service'
 import { Slider } from 'components/Home/Slider'
+import { HomeCard } from 'components/Home/Card'
 
 export default function Home() {
 	return (
@@ -17,7 +15,15 @@ export default function Home() {
 				<link rel='icon' href='/favicon.png' />
 			</Head>
 			<Slider />
-			<Service />
+			<h2>
+				Ofrecemos soluciones especializadas
+				<br />y adaptadas a las necesidades de los clientes
+			</h2>
+			<div className={styled.CardContainer}>
+				<HomeCard icon='users' title='QUIÉNES SOMOS' />
+				<HomeCard icon='box' title='MISIÓN' />
+				<HomeCard icon='truck' title='VISIÓN' />
+			</div>
 		</div>
 	)
 }

@@ -1,38 +1,55 @@
-import React from 'react'
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import React, { useState } from 'react'
 import styles from 'styles/Nav.module.css'
 
 export const NavAtalaya = () => {
+	const [stateNav, setStateNav] = useState(true)
 	return (
-		<Navbar fixed='top' className='shadow p-3 mb-5 bg-white rounded'>
-			<Container>
-				<Navbar.Brand href='#home'>ATALAYA</Navbar.Brand>
-				<Navbar.Toggle aria-controls='basic-navbar-nav' />
-				<Navbar.Collapse id='basic-navbar-nav'>
-					<Nav className='me-auto'>
-						<Nav.Link href='#home'>INICIO</Nav.Link>
-						<NavDropdown
-							title='QUIENES SOMOS'
-							id='basic-nav-dropdown'
-						>
-							<NavDropdown.Item href='#action/3.1'>
-								SOBRE NOSOTROS
-							</NavDropdown.Item>
-							<NavDropdown.Item href='#action/3.2'>
-								SEDES
-							</NavDropdown.Item>
-							<NavDropdown.Item href='#action/3.3'>
-								SEGURIDAD VIAL
-							</NavDropdown.Item>
-							<NavDropdown.Item href='#action/3.4'>
-								SISTEMA DE GESTIÓN INTEGRADO
-							</NavDropdown.Item>
-						</NavDropdown>
-						<Nav.Link href='#link'>SERVICIOS</Nav.Link>
-						<Nav.Link href='#link'>CONTÁCTENOS</Nav.Link>
-					</Nav>
-				</Navbar.Collapse>
-			</Container>
-		</Navbar>
+		<>
+			<nav
+				className={
+					stateNav
+						? styles.navbar
+						: `${styles.navbar} ${styles.navbarShow}`
+				}
+			>
+				<span className={styles.logo}>
+					<img src='/logo.png' alt='' />
+				</span>
+				<ul className={styles.menu}>
+					<li>
+						<a href=''>INICIO</a>
+					</li>
+					<li className={styles.subMenu}>
+						<a href=''>QUIENES SOMOS</a>
+						<ul className={styles.listSubMenu}>
+							<li>
+								<a href=''>SOBRE NOSOTROS</a>
+							</li>
+							<li>
+								<a href=''>SEDES</a>
+							</li>
+							<li>
+								<a href=''>SEGURIDAD VIAL</a>
+							</li>
+							<li>
+								<a href=''>SISTEMA DE GESTIÓN INTEGRADO</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href=''>SERVICIOS</a>
+					</li>
+					<li>
+						<a href=''>CONTACTENOS</a>
+					</li>
+				</ul>
+			</nav>
+			<div
+				className={styles.icons_handleMenu}
+				onClick={() => setStateNav(!stateNav)}
+			>
+				{stateNav ? '=' : 'X'}
+			</div>
+		</>
 	)
 }
