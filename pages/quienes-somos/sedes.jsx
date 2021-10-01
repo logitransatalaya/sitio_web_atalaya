@@ -7,7 +7,7 @@ import styles from '../../styles/Service.module.css'
 
 const sedes = () => {
 	return (
-		<div className=''>
+		<div>
 			<Row>
 				<h1
 					className={`mt-4 ${styles.title_main} ${styles.form_title} `}
