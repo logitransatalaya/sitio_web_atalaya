@@ -13,10 +13,8 @@ const servicios = () => {
 					<span className={`${styles.subtitle_main}`}>
 						ATALAYA S.A.S{' '}
 					</span>
-					gestionamos la logística de su empresa
-					<h1 />
-					<h1 />
-					prestando servicios especializados en:
+					gestionamos la logística de su empresa prestando servicios
+					especializados en:
 				</h1>
 			</Row>
 			<Cards />
