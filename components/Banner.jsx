@@ -9,7 +9,7 @@ export const Banner = ({ url }) => {
 					<img
 						src={`${url}`}
 						width='100%'
-						height='400rem'
+						height='450rem'
 						alt='banners de atalaya'
 					/>
 				</div>
