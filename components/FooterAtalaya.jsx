@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from 'styles/Footer.module.css'
 import Link from 'next/link'
+import styles from 'styles/Footer.module.css'
 
 export const FooterAtalaya = () => {
 	return (
@@ -73,7 +73,7 @@ export const FooterAtalaya = () => {
 						</Link>
 					</li>
 					<li>
-						<Link href='/politica-datos'>
+						<Link href='/dataTreatment'>
 							<a>Políticas de tratamiento de datos</a>
 						</Link>
 					</li>

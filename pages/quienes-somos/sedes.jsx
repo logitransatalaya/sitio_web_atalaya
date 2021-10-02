@@ -1,8 +1,8 @@
 import React from 'react'
-import { CardGroup, Card, Row, Col } from 'react-bootstrap'
-import style from 'styles/sedes.module.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { Button } from 'components/Button'
+import style from 'styles/sedes.module.css'
+import { Card, Row } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from '../../styles/Service.module.css'
 
 const sedes = () => {

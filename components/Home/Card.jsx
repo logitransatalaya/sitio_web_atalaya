@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import React, { useState } from 'react'
 import styled from 'styles/Home.module.css'
 
 export const HomeCard = ({ icon, title }) => {
