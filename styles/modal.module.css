@@ -73,6 +73,7 @@
 	overflow: scroll;
 	overflow-x: hidden;
 	padding-right: 10px;
+	text-align: justify;
 }
 
 .info::-webkit-scrollbar {
