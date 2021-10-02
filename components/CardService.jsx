@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from '../styles/Service.module.css'
-import { Container } from './Container'
 
 export const CardService = ({ image }) => {
 	return (

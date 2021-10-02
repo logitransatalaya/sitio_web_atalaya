@@ -1,8 +1,8 @@
 import React from 'react'
-import { CardGroup, Card, Row, Col } from 'react-bootstrap'
-import style from 'styles/sedes.module.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { Button } from 'components/Button'
+import style from 'styles/sedes.module.css'
+import { Card, Row } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from '../../styles/Service.module.css'
 
 const sedes = () => {
@@ -12,11 +12,8 @@ const sedes = () => {
 				<h1
 					className={`mt-4 ${styles.title_main} ${styles.form_title} `}
 				>
-					En <span>Atalaya S.A.S</span> contamos con las siguientes
-					sedes
-					<h1 />
-					<h1 />
-					en el territorio nacional:
+					En Atalaya S.A.S contamos con las siguientes sedes en el
+					territorio nacional:
 				</h1>
 			</Row>
 			<div className={`${style.container}`}>
@@ -26,7 +23,9 @@ const sedes = () => {
 							<Card.Title className={`${style.title}`}>
 								Cartagena-Bolivar
 							</Card.Title>
-							<Card.Img src='/cartagena.png' />
+							<div className={style.boxImgSedes}>
+								<Card.Img src='/cartagena.png' />
+							</div>
 							<Card.Text
 								className={`${style.address} ${style.title_address}`}
 							>
@@ -44,7 +43,9 @@ const sedes = () => {
 							<Card.Title className={`${style.title}`}>
 								Bello-Antioquia
 							</Card.Title>
-							<Card.Img src='/medellin.png' />
+							<div className={style.boxImgSedes}>
+								<Card.Img src='/medellin.png' />
+							</div>
 							<Card.Text
 								className={`${style.address} ${style.title_address}`}
 							>
