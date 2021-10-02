@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styles/seguridadvial.module.css'
 import Modal from 'components/Modal'
+import CardInfoBanner from 'components/CardInfoBanner'
+import { Banner } from 'components/Banner'
 
 const seguridadVial = () => {
 	const [showModal, setShowModal] = useState(false)
@@ -11,7 +13,22 @@ const seguridadVial = () => {
 
 	return (
 		<div className={`${styled.container}`}>
-			<button onClick={handleModal}>abrir modal</button>
+			<Banner url={'../vial.png'} />
+			<CardInfoBanner handleModal={handleModal}>
+				<p>
+					LOGÍSITICA Y TRANSPORTE ATALAYA S.A.S. es una empresa
+					dedicada a transporte masivo en general, pasajeros, mixto,
+					especial, transporte de residuos y mercancías peligrosas,
+					transporte tercerizado, transporte de mercancías licitas,
+					transporte logístico portuario, aéreo, prorrateo, depósito
+					de transito aduanero, importaciones, alquiler de maquinaria
+					amarilla, grúas telescópicas, agrícola, tracto camiones,
+					adecuaciones con camión cisterna, cama baja. Tratamiento de
+					aguas residuales, asesoría y consultoría, ambiental, civil.
+					Arrendamiento de todo tipo de bienes inmuebles, aserias y
+					consultorías financieras.
+				</p>
+			</CardInfoBanner>
 			{showModal && (
 				<Modal handleModal={handleModal}>
 					<h1>hola mundo</h1>
