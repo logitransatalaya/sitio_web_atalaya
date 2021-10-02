@@ -66,6 +66,7 @@
 	text-align: justify;
 	font-size: 0.95rem;
 	border-radius: 0.8rem;
+	color: #053b77;
 	box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.349);
 }
 
@@ -181,7 +182,6 @@
 		gap: 3rem;
 		justify-content: center;
 		font-family: 'Raleway', sans-serif;
-		color: #053b77;
 	}
 
 	.NuestroAlcance h3 {
@@ -191,6 +191,12 @@
 	.NuestroAlcance p {
 		font-size: 1.2rem;
 		text-align: justify;
+	}
+
+	.ServiceCard h3 {
+		font-size: 3rem;
+		font-weight: 600;
+		color: #ff6c0c;
 	}
 }
 
@@ -206,6 +212,7 @@
 		font-family: 'Raleway', sans-serif;
 		color: #053b77;
 	}
+
 	.NuestroAlcance div:nth-of-type(2) {
 		grid-row: 2;
 	}

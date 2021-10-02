@@ -1,12 +1,13 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
+import { Map } from 'components/Map'
+import { Cards } from 'components/Cards'
+import { Button } from 'components/Button'
 import styled from 'styles/Home.module.css'
 import { Slider } from 'components/Home/Slider'
 import { HomeCard } from 'components/Home/Card'
 import { Container } from 'components/Container'
-import { Cards } from 'components/Cards'
-import { Map } from 'components/Map'
-import { Button } from 'components/Button'
 
 export default function Home() {
 	return (
@@ -52,18 +53,22 @@ export default function Home() {
 							a la vanguardia que soporta nuestra operación.
 						</p>
 						<h5>
-							<a href='https://www.logitransatalaya.com/nosotros'>
-								Conoce más
-							</a>
+							<Link href='/quienes-somos/sobre-nosotros'>
+								<a>Conoce más</a>
+							</Link>
 						</h5>
 					</div>
 				</div>
+				<div className={styled.ServiceCard}>
+					<h3>Nuestros Servicios</h3>
+					<p>
+						Gestionamos la logística de su empresa prestando
+						servicios especializados en:
+					</p>
+				</div>
 				<Cards />
 				<h4>EN ATALAYA S.A.S NOS ENCARGAMOS DE TODO</h4>
-				<Button
-					text={'¡Solicita una cotización!'}
-					to={'/contactenos'}
-				/>
+				<Button text='¡Solicita una cotización!' to='/contactenos' />
 				<Map />
 			</Container>
 		</div>
