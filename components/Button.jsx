@@ -7,7 +7,7 @@ export const Button = ({ text, to }) => {
 		<div className='mt-1 mb-5'>
 			<div className={styles.button_service_center}>
 				<Link href={`${to}`}>
-					<a className={styles.button_service}>{text}</a>
+					<a className={`${styles.button_service}`}>{text}</a>
 				</Link>
 			</div>
 		</div>

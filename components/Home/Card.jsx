@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styled from 'styles/Home.module.css'
 
-export const HomeCard = ({ icon, title, description }) => {
+export const HomeCard = ({ icon, title }) => {
 	const [color, setColor] = useState('')
 
 	const handleHover = (type) => {
