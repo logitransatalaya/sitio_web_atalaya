@@ -157,7 +157,7 @@
 		display: flex;
 		flex-direction: row;
 		width: 100%;
-		justify-content: center;
+		justify-content: space-between;
 	}
 
 	.card {
@@ -177,9 +177,9 @@
 	.NuestroAlcance {
 		margin-top: 5rem;
 		display: grid;
-		grid-template-columns: 48% 48%;
+		grid-template-columns: 44% 48%;
 		flex-wrap: wrap;
-		gap: 3rem;
+		gap: 6rem;
 		justify-content: center;
 		font-family: 'Raleway', sans-serif;
 	}
@@ -215,5 +215,8 @@
 
 	.NuestroAlcance div:nth-of-type(2) {
 		grid-row: 2;
+	}
+	.CardContainer {
+		justify-content: center;
 	}
 }
