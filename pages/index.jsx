@@ -5,6 +5,8 @@ import { Slider } from 'components/Home/Slider'
 import { HomeCard } from 'components/Home/Card'
 import { Container } from 'components/Container'
 import { Cards } from 'components/Cards'
+import { Map } from 'components/Map'
+import { Button } from 'components/Button'
 
 export default function Home() {
 	return (
@@ -57,6 +59,12 @@ export default function Home() {
 					</div>
 				</div>
 				<Cards />
+				<h4>EN ATALAYA S.A.S NOS ENCARGAMOS DE TODO</h4>
+				<Button
+					text={'¡Solicita una cotización!'}
+					to={'/contactenos'}
+				/>
+				<Map />
 			</Container>
 		</div>
 	)
