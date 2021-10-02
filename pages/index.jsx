@@ -34,7 +34,7 @@ export default function Home() {
 				<div className={`${styled.NuestroAlcance}`}>
 					<div>
 						<Image
-							src='/imgAlcance.jpeg'
+							src='/imgAlcance.png'
 							width='540'
 							height='370'
 							alt='Logotipo de atalaya'

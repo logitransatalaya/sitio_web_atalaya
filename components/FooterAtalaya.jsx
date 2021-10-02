@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from 'styles/Footer.module.css'
 import Link from 'next/link'
-import { ReactComponent as Facebook } from '/public/icons/facebook.svg'
 
 export const FooterAtalaya = () => {
 	return (

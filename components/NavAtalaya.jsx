@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import styles from 'styles/Nav.module.css'
+import { BtnToggle } from './BtnToggle'
 
 export const NavAtalaya = () => {
 	const [stateNav, setStateNav] = useState(true)
@@ -64,7 +65,7 @@ export const NavAtalaya = () => {
 				className={styles.icons_handleMenu}
 				onClick={() => setStateNav(!stateNav)}
 			>
-				{stateNav ? '=' : 'X'}
+				<BtnToggle />
 			</div>
 		</>
 	)
