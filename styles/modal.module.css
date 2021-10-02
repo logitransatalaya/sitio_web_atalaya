@@ -116,3 +116,9 @@
 	background: #ff6c0c;
 	color: #fff;
 }
+
+@media (max-width: 600px) {
+	.info {
+		text-align: left;
+	}
+}
