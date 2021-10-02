@@ -68,12 +68,12 @@ export const FooterAtalaya = () => {
 				<h5 className={styles.footer_title}>TE PUEDE INTERESAR</h5>
 				<ul>
 					<li>
-						<Link href='/politica-privacidad'>
+						<Link href='/privacyPolicies'>
 							<a>Políticas de privacidad</a>
 						</Link>
 					</li>
 					<li>
-						<Link href='//politica-datos'>
+						<Link href='/politica-datos'>
 							<a>Políticas de tratamiento de datos</a>
 						</Link>
 					</li>
