@@ -24,10 +24,12 @@ export const NavAtalaya = () => {
 						</Link>
 					</li>
 					<li className={styles.subMenu}>
-						<a href='#'>QUIENES SOMOS</a>
+						<a style={{ color: '#053b77', cursor: 'pointer' }}>
+							QUIENES SOMOS
+						</a>
 						<ul className={styles.listSubMenu}>
 							<li>
-								<Link href='#/quienes-somos/sobre-nosotros'>
+								<Link href='/quienes-somos/sobre-nosotros'>
 									<a>SOBRE NOSOTROS</a>
 								</Link>
 							</li>
