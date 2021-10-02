@@ -1,17 +1,30 @@
 import React, { useState } from 'react'
 import styled from 'styles/About.module.css'
 
+const initialState = {
+	type_client: 'Empresa',
+	name: '',
+	mail: '',
+	phone: '',
+	affair: 'Cotización',
+	comments: ''
+}
 const FormAbout = () => {
-	const [selectStatus, setselectStatus] = useState('default')
-	const [selectStatus2, setselectStatus2] = useState('default')
+	const [valuesInputs, setValuesInputs] = useState(initialState)
+	const [checkInput, setCheckInput] = useState(false)
 
-	const handleSelect = (e) => {
-		setselectStatus(e.target.value)
+	const { type_client, name, mail, phone, affair, comments } = valuesInputs
+
+	const handleInputs = (e) => {
+		setValuesInputs({
+			...valuesInputs,
+			[e.target.name]: e.target.value
+		})
 	}
 
 	const animationSelect = () => {
 		const result =
-			selectStatus === 'default'
+			type_client === ''
 				? `${styled.form_select}`
 				: `${styled.form_select} ${styled.form_select_focus}`
 		return result
@@ -19,14 +32,24 @@ const FormAbout = () => {
 
 	const animationSelect2 = () => {
 		const result =
-			selectStatus2 === 'default'
+			affair === ''
 				? `${styled.form_select}`
 				: `${styled.form_select} ${styled.form_select_focus}`
 		return result
 	}
 
+	const handleSubmit = (e) => {
+		e.preventDefault()
+
+		if (!checkInput) {
+			return alert('Tienes que capetar las politicas')
+		}
+
+		alert('Se esta enviando')
+	}
+
 	return (
-		<form className={styled.form}>
+		<form className={styled.form} onSubmit={handleSubmit}>
 			<h2 className={styled.form_title}>
 				Déjenos conocer su requerimiento y pronto lo contactaremos
 			</h2>
@@ -35,15 +58,15 @@ const FormAbout = () => {
 					<select
 						id='asunto'
 						className={animationSelect()}
-						defaultValue={selectStatus}
-						onChange={handleSelect}
+						name={'type_client'}
+						value={type_client}
+						onChange={handleInputs}
 					>
-						<option value='default' disabled hidden></option>
 						<option value='persona'>Persona</option>
 						<option value='empresa'>Empresa</option>
 					</select>
 					<label htmlFor='asunto' className={styled.form_label}>
-						Asunto:
+						Tipo de cliente
 					</label>
 					<span className={styled.form_line}></span>
 				</div>
@@ -53,6 +76,9 @@ const FormAbout = () => {
 						id='name'
 						className={styled.form_input}
 						placeholder=' '
+						name={'name'}
+						value={name}
+						onChange={handleInputs}
 					/>
 					<label htmlFor='name' className={styled.form_label}>
 						Nombre:
@@ -65,6 +91,9 @@ const FormAbout = () => {
 						id='email'
 						className={styled.form_input}
 						placeholder=' '
+						name={'mail'}
+						value={mail}
+						onChange={handleInputs}
 					/>
 					<label htmlFor='email' className={styled.form_label}>
 						E-mail:
@@ -77,6 +106,9 @@ const FormAbout = () => {
 						id='phone'
 						className={styled.form_input}
 						placeholder=' '
+						name={'phone'}
+						value={phone}
+						onChange={handleInputs}
 					/>
 					<label htmlFor='phone' className={styled.form_label}>
 						Celular:
@@ -87,15 +119,11 @@ const FormAbout = () => {
 					<select
 						id='asunto'
 						className={animationSelect2()}
-						defaultValue={selectStatus2}
-						onChange={(e) => setselectStatus2(e.target.value)}
+						onChange={handleInputs}
+						name={'affair'}
+						value={affair}
+						onChange={handleInputs}
 					>
-						<option
-							value='default'
-							selected
-							disabled
-							hidden
-						></option>
 						<option value='cotizacion'>Cotización</option>
 						<option value='inquietud'>Inquietud</option>
 						<option value='solicitudinfo'>
@@ -114,6 +142,9 @@ const FormAbout = () => {
 						id='message'
 						className={`${styled.form_input} ${styled.form_textarea}`}
 						placeholder=' '
+						name={'comments'}
+						value={comments}
+						onChange={handleInputs}
 					/>
 					<label htmlFor='message' className={styled.form_label}>
 						Comentarios:
@@ -123,7 +154,12 @@ const FormAbout = () => {
 			</div>
 			<div className={styled.politics_btn}>
 				<div className={styled.politics}>
-					<input id='check' type='checkbox' />
+					<input
+						id='check'
+						type='checkbox'
+						name={'politics'}
+						onChange={() => setCheckInput(!checkInput)}
+					/>
 					<label htmlFor='check'>
 						Estoy de acuerdo con las políticas de tratamiento de
 						datos personales <span>Ver políticas</span>
