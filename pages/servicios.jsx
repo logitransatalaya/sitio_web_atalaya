@@ -4,14 +4,14 @@ import { Cards } from 'components/Cards'
 import { Button } from 'components/Button'
 import styles from '../styles/Service.module.css'
 
-const servicios = ({ text }) => {
+const servicios = () => {
 	return (
 		<div className={`container ${styles.container_service}`}>
 			<Row>
 				<h1 className={`${styles.title_main} ${styles.form_title}`}>
-					En
+					En{' '}
 					<span className={`${styles.subtitle_main}`}>
-						ATALAYA S.A.S
+						ATALAYA S.A.S{' '}
 					</span>
 					gestionamos la logística de su empresa
 					<h1 />
