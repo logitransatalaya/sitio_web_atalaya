@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import styled from 'styles/seguridadvial.module.css'
 import Modal from 'components/Modal'
-import CardInfoBanner from 'components/CardInfoBanner'
+import React, { useState } from 'react'
 import { Banner } from 'components/Banner'
+import styled from 'styles/seguridadvial.module.css'
+import CardInfoBanner from 'components/CardInfoBanner'
 
 const seguridadVial = () => {
 	const [showModal, setShowModal] = useState(false)
