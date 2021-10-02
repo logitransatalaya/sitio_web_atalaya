@@ -27,11 +27,12 @@
 }
 
 .menu li {
-	margin-right: 1rem;
+	margin-right: 1.5rem;
 	list-style: none;
 }
 
 .menu li a {
+	display: inline-block;
 	text-decoration: none;
 	color: #073d78;
 	font-size: 0.8rem;
@@ -47,6 +48,17 @@
 	position: relative;
 }
 
+.subMenu > .iconListItem {
+	position: absolute;
+	right: -15px;
+	width: 8px;
+	transition: transform 0.5s;
+}
+
+.subMenu:hover > .iconListItem {
+	transform: rotate(90deg);
+}
+
 .listSubMenu {
 	position: absolute;
 	width: 300px;
@@ -56,6 +68,32 @@
 	background-color: #fff;
 	padding: 1rem;
 	display: none;
+	border-left: 1px solid #ff6c0c;
+}
+
+.listSubMenu li a {
+	display: inline;
+	transition: margin-left 0.5s;
+}
+
+.listSubMenu li a:hover {
+	margin-left: 0.5em;
+}
+
+.listItem {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5px;
+}
+
+.iconListItem {
+	width: 5px;
+}
+
+.iconListItem svg {
+	width: 100%;
+	fill: #ff6c0c;
 }
 
 .subMenu:hover .listSubMenu {
@@ -76,7 +114,7 @@
 	display: none;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
 	.navbar {
 		flex-direction: column;
 		position: fixed;
