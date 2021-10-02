@@ -86,9 +86,11 @@ export const FooterAtalaya = () => {
 				</ul>
 			</div>
 			<div className={styles.Copyright}>
-				<p>
-					© Copyright 2021 -{' '}
-					<b>Logística y Transporte Atalaya S.A.S</b> - Colombia
+				<p style={{ marginBottom: '0' }}>
+					<small>
+						© Copyright 2021 -{' '}
+						<b>Logística y Transporte Atalaya S.A.S</b> - Colombia
+					</small>
 				</p>
 			</div>
 		</footer>
