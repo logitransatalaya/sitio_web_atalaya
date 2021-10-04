@@ -9,7 +9,7 @@ export const Map = () => {
 			style={{
 				width: '100%',
 				height: '450px',
-				border: '0'
+				marginTop: '5rem'
 			}}
 		></iframe>
 	)

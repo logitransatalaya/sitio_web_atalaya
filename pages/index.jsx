@@ -67,9 +67,13 @@ export default function Home() {
 					</p>
 				</div>
 				<Cards />
-				<h4>EN ATALAYA S.A.S NOS ENCARGAMOS DE TODO</h4>
-				<Button text='¡Solicita una cotización!' to='/contactenos' />
-				<Map />
+				<div className={styled.map}>
+					<h4>EN ATALAYA S.A.S NOS ENCARGAMOS DE TODO</h4>
+					<Link href='/contactenos'>
+						<a>¡Solicita una cotización!</a>
+					</Link>
+					<Map />
+				</div>
 			</Container>
 		</div>
 	)

@@ -23,9 +23,9 @@ const privacyPolicies = () => {
 					de que el uso inadecuado de la información puede dar lugar a
 					varios tipos de sanciones, entre ellas de tipo penal,
 					contenidas en la Ley 1273 de 2009: Delitos Informáticos -
-					Artículo 269 F. Violación de los Datos Personales: "El que,
-					sin estar facultado para ello, con provecho propio o de un
-					tercero, obtenga, compile, sustraiga, ofrezca, venda,
+					Artículo 269 F. Violación de los Datos Personales: &quot;El
+					que, sin estar facultado para ello, con provecho propio o de
+					un tercero, obtenga, compile, sustraiga, ofrezca, venda,
 					intercambie, envíe, compre, intercepte, divulgue, modifique
 					o emplee códigos personales, datos personales contenidos en
 					ficheros, archivos, bases de datos o medios semejantes,
