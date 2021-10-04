@@ -1,11 +1,11 @@
 import Modal from 'components/Modal'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Banner } from 'components/Banner'
 import styled from 'styles/seguridadvial.module.css'
 import CardInfoBanner from 'components/CardInfoBanner'
 import RoadSafetyPolicies from 'components/RoadSafetyPolicies'
 
-const seguridadVial = () => {
+const SeguridadVial = () => {
 	const [showModal, setShowModal] = useState(false)
 
 	const handleModal = () => {
@@ -46,4 +46,4 @@ const seguridadVial = () => {
 	)
 }
 
-export default seguridadVial
+export default SeguridadVial

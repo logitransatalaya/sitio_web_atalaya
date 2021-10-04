@@ -84,7 +84,7 @@ export const FooterAtalaya = () => {
 									</Link>
 								</li>
 								<li>
-									<Link href='/sedes'>
+									<Link href='/quienes-somos/sedes'>
 										<a>Sedes</a>
 									</Link>
 								</li>

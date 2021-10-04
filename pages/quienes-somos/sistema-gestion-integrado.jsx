@@ -5,7 +5,7 @@ import SistemaGestionInfo from 'components/SistemaGestionInfo'
 import React, { useState } from 'react'
 import styled from '../../styles/sistemaGestionIntegrado.module.css'
 
-const sistemaGestionIntegrado = () => {
+const SistemaGestionIntegrado = () => {
 	const [showModal, setShowModal] = useState(false)
 
 	const handleModal = () => {
@@ -40,4 +40,4 @@ const sistemaGestionIntegrado = () => {
 	)
 }
 
-export default sistemaGestionIntegrado
+export default SistemaGestionIntegrado
