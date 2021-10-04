@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import styled from 'styles/About.module.css'
+import Link from 'next/link'
 
 const initialState = {
-	type_client: 'Empresa',
+	type_client: 'default',
 	name: '',
 	mail: '',
 	phone: '',
-	affair: 'Cotización',
+	affair: 'default',
 	comments: ''
 }
 const FormAbout = () => {
@@ -24,7 +25,7 @@ const FormAbout = () => {
 
 	const animationSelect = () => {
 		const result =
-			type_client === ''
+			type_client === 'default'
 				? `${styled.form_select}`
 				: `${styled.form_select} ${styled.form_select_focus}`
 		return result
@@ -32,7 +33,7 @@ const FormAbout = () => {
 
 	const animationSelect2 = () => {
 		const result =
-			affair === ''
+			affair === 'default'
 				? `${styled.form_select}`
 				: `${styled.form_select} ${styled.form_select_focus}`
 		return result
@@ -56,17 +57,18 @@ const FormAbout = () => {
 			<div className={styled.form_container}>
 				<div className={styled.form_group}>
 					<select
-						id='asunto'
+						id='cliente'
 						className={animationSelect()}
 						name={'type_client'}
 						value={type_client}
 						onChange={handleInputs}
 					>
+						<option value='default' disabled hidden></option>
 						<option value='persona'>Persona</option>
 						<option value='empresa'>Empresa</option>
 					</select>
-					<label htmlFor='asunto' className={styled.form_label}>
-						Tipo de cliente
+					<label htmlFor='cliente' className={styled.form_label}>
+						Tipo de cliente:
 					</label>
 					<span className={styled.form_line}></span>
 				</div>
@@ -124,6 +126,7 @@ const FormAbout = () => {
 						value={affair}
 						onChange={handleInputs}
 					>
+						<option value='default' disabled hidden></option>
 						<option value='cotizacion'>Cotización</option>
 						<option value='inquietud'>Inquietud</option>
 						<option value='solicitudinfo'>
@@ -162,7 +165,10 @@ const FormAbout = () => {
 					/>
 					<label htmlFor='check'>
 						Estoy de acuerdo con las políticas de tratamiento de
-						datos personales <span>Ver políticas</span>
+						datos personales{' '}
+						<Link href='/dataTreatment'>
+							<a target='_blank'>Ver políticas</a>
+						</Link>
 					</label>
 				</div>
 				<div className={styled.btn_container}>

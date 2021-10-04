@@ -113,8 +113,9 @@
 	padding-top: 2em;
 }
 
-.politics label span {
+.politics label a {
 	color: #ff6c0c;
+	text-decoration: none;
 }
 
 .politics input {

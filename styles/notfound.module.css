@@ -20,9 +20,11 @@
 	border: none;
 	padding: 7px 15px;
 	border-radius: 10px;
+	text-decoration: none;
 }
 
 .btn_back:hover {
 	background-color: #b8a3ff;
 	transition: all 0.5s ease;
+	color: white;
 }
