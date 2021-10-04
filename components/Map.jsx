@@ -3,7 +3,7 @@ import React from 'react'
 export const Map = () => {
 	return (
 		<iframe
-			src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7848.67244229742!2d-75.521779!3d10.394848!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef62580ed2c0c23%3A0x5f4623e38ce07343!2shotel%20bosque%20real!5e0!3m2!1ses!2sco!4v1633179850856!5m2!1ses!2sco'
+			src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.4133730125645!2d-75.55629497077011!3d6.309171999714625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f3e114f1755%3A0x2a227c6aa87eaea0!2sZamora%2C%20Bello%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1633203648427!5m2!1ses!2sco'
 			allowfullscreen=''
 			loading='lazy'
 			style={{
