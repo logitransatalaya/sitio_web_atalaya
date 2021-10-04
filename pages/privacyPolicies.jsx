@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Banner } from 'components/Banner'
 import CardInfoBanner from 'components/CardInfoBanner'
+import Modal from 'components/Modal'
+import PrivacyPolicy from 'components/PrivacyPolicy'
 
 const privacyPolicies = () => {
+	const [showModal, setShowModal] = useState(false)
+
+	const handleModal = () => {
+		setShowModal(!showModal)
+	}
+
 	return (
-		<div className='mb-4'>
+		<div style={{ marginBottom: '150px' }}>
 			<Banner
 				url={'privacidad-de-datos.png'}
 				urlMobile={'politica-de-privacidad-mobile.png'}
 			/>
-			<CardInfoBanner>
+			<CardInfoBanner handleModal={handleModal}>
 				<p>
-					{' '}
 					<strong>Logística y transporte Atalaya</strong> es conciente
 					de que el uso inadecuado de la información puede dar lugar a
 					varios tipos de sanciones, entre ellas de tipo penal,
@@ -24,21 +31,14 @@ const privacyPolicies = () => {
 					ficheros, archivos, bases de datos o medios semejantes,
 					incurrirá en pena de prisión de cuarenta y ocho (48) a
 					noventa y seis (96) meses y en multa de 100 a 1000 salarios
-					mínimos legales mensuales vigentes&quot;. Comprendemos que
-					es una gran responsabilidad y por eso existe el compromiso y
-					esfuerzo para proteger su información. Los datos recopilados
-					se utilizan con objetivos de difusión de nuestras
-					actividades, así también para mantener y cumplir las
-					obligaciones contractuales, legales y de transparencia que
-					exijan algún tipo de comunicación. Parte de los datos se
-					utilizan como referencia para optimizar la pertinencia de
-					los contenidos y para garantizar la integridad,
-					confidencialidad y disponibilidad de la información. ATALAYA
-					no venderá, distribuirá ni arrendará la información
-					almacenada a terceros, excepto de acuerdo con estos términos
-					y condiciones.
+					mínimos legales mensuales vigentes".
 				</p>
 			</CardInfoBanner>
+			{showModal && (
+				<Modal handleModal={handleModal}>
+					<PrivacyPolicy />
+				</Modal>
+			)}
 		</div>
 	)
 }
