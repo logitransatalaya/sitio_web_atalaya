@@ -33,7 +33,7 @@
 }
 
 .box_logo {
-	width: 300px;
+	width: 250px;
 }
 
 .box_logo img {
@@ -61,11 +61,11 @@
 .content_icons {
 	display: flex;
 	justify-content: center;
-	gap: 1em;
+	gap: 1rem;
 }
 
 .box_icon {
-	width: 50px;
+	width: 35px;
 }
 
 .box_icon svg {
