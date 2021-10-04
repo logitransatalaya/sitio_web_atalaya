@@ -26,10 +26,6 @@
 	background-color: #ff6c0c;
 }
 
-.slider {
-	background-color: red;
-}
-
 .img1 {
 	background: url('/primeraR.png');
 }
@@ -152,12 +148,64 @@
 }
 
 .ServiceCard {
-	margin-top: 6rem;
+	margin-top: 5rem;
+	font-family: 'Raleway', sans-serif;
 }
 
 .ServiceCard h3 {
-	font-size: 2.5rem;
+	font-weight: 700;
+	font-size: 3rem;
+	font-weight: 700;
+	color: #ff6c0c;
+	position: relative;
+}
+
+.ServiceCard h3::before {
+	background-color: #ff6c0c;
+	bottom: -8px;
+	content: '';
+	height: 0.2rem;
+
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+
+	width: 22%;
+}
+
+.ServiceCard p {
+	color: #053b77;
+	font-size: 1.5rem;
 	font-weight: 600;
+	margin: 0 auto;
+
+	line-height: 1.5rem;
+	padding-top: 2rem;
+	width: 42%;
+}
+
+.map {
+	margin: 5rem 0;
+}
+
+.map h4 {
+	margin-bottom: 1.5rem;
+}
+
+.map a {
+	background-color: #ff6c0c;
+	border-radius: 10px;
+	color: #fff;
+	height: 30px;
+
+	padding: 0.5rem 2rem;
+	text-decoration: none;
+	width: 180px;
+}
+.map a:hover {
+	border: 0.2rem solid #ff6c0c;
+	background: white;
 	color: #ff6c0c;
 }
 
