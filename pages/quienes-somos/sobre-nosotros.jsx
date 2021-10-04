@@ -9,7 +9,6 @@ const sobreNosotros = () => {
 	return (
 		<Container>
 			<div className={styled.SobreNosotros}>
-				{/* <h2>Sobre Nosotros</h2> */}
 				<div className={styled.initialTextContainer}>
 					<Image
 						src='/sobrenosotros.png'
