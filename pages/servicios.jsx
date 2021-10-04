@@ -9,7 +9,9 @@ const servicios = () => {
 	return (
 		<>
 			<Head>
-				<title>Servicios - Logística y Transporte Atalaya S.A.S</title>
+				<title>
+					Nuestros Servicios - Logística y Transporte Atalaya S.A.S
+				</title>
 				<meta
 					name='description'
 					content='En ATALAYA S.A.S gestionamos la logística de su empresa prestando servicios especializados.'
