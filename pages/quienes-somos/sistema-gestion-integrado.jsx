@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Modal from 'components/Modal'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Banner } from 'components/Banner'
 import CardInfoBanner from 'components/CardInfoBanner'
 import SistemaGestionInfo from 'components/SistemaGestionInfo'
@@ -12,6 +12,20 @@ const SistemaGestionIntegrado = () => {
 	const handleModal = () => {
 		setShowModal(!showModal)
 	}
+
+	useEffect(() => {
+		if (showModal) {
+			document.body.style.position = 'fixed'
+			document.body.style.top = `-${window.scrollY}px`
+			document.body.style.paddingRight = '15px'
+		} else if (!showModal) {
+			const scrollY = document.body.style.top
+			document.body.style.position = ''
+			document.body.style.top = ''
+			window.scrollTo(0, parseInt(scrollY || '0') * -1)
+			document.body.style.paddingRight = '0'
+		}
+	}, [showModal])
 
 	console.log(showModal)
 
