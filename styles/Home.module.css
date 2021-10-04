@@ -16,7 +16,7 @@
 
 .container h2::before {
 	content: '';
-	width: 10%;
+	width: 10rem;
 	margin: 0 auto;
 	height: 0.2rem;
 	position: absolute;
@@ -182,7 +182,7 @@
 
 	line-height: 1.5rem;
 	padding-top: 2rem;
-	width: 42%;
+	width: 90%;
 }
 
 .map {
@@ -255,6 +255,9 @@
 	.NuestroAlcance p {
 		font-size: 1.2rem;
 		text-align: justify;
+	}
+	.ServiceCard p {
+		width: 42%;
 	}
 }
 

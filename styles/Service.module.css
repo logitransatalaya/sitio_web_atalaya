@@ -94,6 +94,12 @@
 	padding-top: 5rem;
 }
 
+@media (min-width: 550px) {
+	.title_main {
+		width: 30% !important;
+	}
+}
+
 @media (max-width: 1270px) {
 	.row {
 		grid-template-columns: repeat(2, 300px);
