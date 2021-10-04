@@ -2,6 +2,7 @@
 	font-size: 2rem;
 	color: #053b77;
 	text-align: center;
+	padding: 0;
 }
 
 .card_service {
@@ -22,11 +23,17 @@
 }
 
 .subtitle_main {
-	font-size: 2.1rem;
+	font-weight: 700;
 }
 
 .form_title {
 	color: #063061;
+	margin: 0 auto;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.6rem;
+	width: 70%;
+	font-weight: 600;
+
 	position: relative;
 }
 
