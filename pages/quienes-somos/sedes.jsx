@@ -59,7 +59,7 @@ const sedes = () => {
 					</Card>
 				</Row>
 			</div>
-			<Button text={'!Solicita una cotizacion¡'} to={'/contactenos'} />
+			<Button text={'¡SOLICITA UNA COTIZACION!'} to={'/contactenos'} />
 		</div>
 	)
 }
