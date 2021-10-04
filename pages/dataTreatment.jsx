@@ -5,7 +5,10 @@ import React from 'react'
 const dataTreatment = () => {
 	return (
 		<div>
-			<Banner url={'tratamiento de datos.png'} />
+			<Banner
+				url={'politica-de-tratamiento-de-datos.png'}
+				urlMobile={'politica-de-tratamiento-de-datos-mobile.png'}
+			/>
 			<CardInfoBanner>
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
 				excepturi, aut libero, nostrum, repudiandae perspiciatis

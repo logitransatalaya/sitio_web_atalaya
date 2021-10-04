@@ -5,7 +5,10 @@ import CardInfoBanner from 'components/CardInfoBanner'
 const privacyPolicies = () => {
 	return (
 		<div className='mb-4'>
-			<Banner url={'privacidad-de-datos.png'} />
+			<Banner
+				url={'privacidad-de-datos.png'}
+				urlMobile={'politica-de-privacidad-mobile.png'}
+			/>
 			<CardInfoBanner>
 				<p>
 					{' '}
