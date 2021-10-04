@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Banner } from 'components/Banner'
 import CardInfoBanner from 'components/CardInfoBanner'
 import Modal from 'components/Modal'
@@ -10,6 +10,20 @@ const privacyPolicies = () => {
 	const handleModal = () => {
 		setShowModal(!showModal)
 	}
+
+	useEffect(() => {
+		if (showModal) {
+			document.body.style.position = 'fixed'
+			document.body.style.top = `-${window.scrollY}px`
+			document.body.style.paddingRight = '15px'
+		} else if (!showModal) {
+			const scrollY = document.body.style.top
+			document.body.style.position = ''
+			document.body.style.top = ''
+			document.body.style.paddingRight = '0'
+			window.scrollTo(0, parseInt(scrollY || '0') * -1)
+		}
+	}, [showModal])
 
 	return (
 		<div style={{ marginBottom: '150px' }}>
