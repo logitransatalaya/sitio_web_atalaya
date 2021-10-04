@@ -186,3 +186,7 @@
 .form_textarea:not(:placeholder-shown) ~ .form_line_textarea {
 	transform: scale(1);
 }
+
+.form_textarea {
+	resize: none;
+}

@@ -119,8 +119,15 @@
 }
 
 .NuestroAlcance {
+	text-align: justify;
 	margin-top: 5rem;
 	color: #053b77;
+	display: grid;
+	grid-template-columns: 41% 48%;
+	flex-wrap: wrap;
+	gap: 8rem;
+	justify-content: center;
+	font-family: 'Raleway', sans-serif;
 }
 
 .NuestroAlcance a {
@@ -131,6 +138,11 @@
 	height: 30px;
 	width: 180px;
 	border-radius: 10px;
+}
+
+.NuestroAlcance h3 {
+	font-size: 2.1rem;
+	text-align: center;
 }
 
 .NuestroAlcance a:hover {
@@ -190,16 +202,6 @@
 
 	.NuestroAlcance {
 		margin-top: 7rem;
-		display: grid;
-		grid-template-columns: 41% 48%;
-		flex-wrap: wrap;
-		gap: 8rem;
-		justify-content: center;
-		font-family: 'Raleway', sans-serif;
-	}
-
-	.NuestroAlcance h3 {
-		font-size: 2.1rem;
 	}
 
 	.NuestroAlcance p {

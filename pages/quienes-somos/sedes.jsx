@@ -29,7 +29,7 @@ const sedes = () => {
 							<Card.Text
 								className={`${style.address} ${style.title_address}`}
 							>
-								<h3>Sede principal</h3>
+								<b>Sede principal</b>
 							</Card.Text>
 
 							<Card.Text className={`${style.address}`}>
@@ -49,7 +49,7 @@ const sedes = () => {
 							<Card.Text
 								className={`${style.address} ${style.title_address}`}
 							>
-								<h3>Sucursal de Antioquia</h3>
+								<b>Sucursal de Antioquia</b>
 							</Card.Text>
 
 							<Card.Text className={`${style.address}`}>
