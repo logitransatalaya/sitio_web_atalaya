@@ -18,12 +18,12 @@ const sedes = () => {
 				<link rel='icon' href='/favicon.png' />
 			</Head>
 			<Row>
-				<h1
+				<h3
 					className={`mt-4 ${styles.title_main} ${styles.form_title} `}
 				>
 					En Atalaya S.A.S contamos con las siguientes sedes en el
 					territorio nacional:
-				</h1>
+				</h3>
 			</Row>
 			<div className={`${style.container}`}>
 				<Row xs={1} md={2} className={`${style.CardContainer}`}>
