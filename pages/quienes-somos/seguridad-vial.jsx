@@ -1,5 +1,5 @@
 import Modal from 'components/Modal'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Banner } from 'components/Banner'
 import styled from 'styles/seguridadvial.module.css'
 import CardInfoBanner from 'components/CardInfoBanner'
@@ -14,7 +14,10 @@ const seguridadVial = () => {
 
 	return (
 		<div className={`${styled.container}`}>
-			<Banner url={'../vial.png'} />
+			<Banner
+				url={'../vial.png'}
+				urlMobile={'../seguridad-vial-mobile.png'}
+			/>
 			<CardInfoBanner handleModal={handleModal}>
 				<p>
 					<strong>LOGÍSITICA Y TRANSPORTE ATALAYA S.A.S.</strong> es

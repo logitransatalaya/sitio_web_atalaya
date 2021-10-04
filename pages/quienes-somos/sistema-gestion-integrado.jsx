@@ -16,7 +16,10 @@ const sistemaGestionIntegrado = () => {
 
 	return (
 		<div className={`${styled.containerSGI}`}>
-			<Banner url={'../gestion.png'} />
+			<Banner
+				url={'../gestion.png'}
+				urlMobile={'../gestion-integrado-mobile.png'}
+			/>
 			<CardInfoBanner handleModal={handleModal}>
 				<p>
 					Esta política aplica para todos los trabajadores de la
