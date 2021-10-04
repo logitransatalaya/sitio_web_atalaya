@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import { Button } from 'components/Button'
 import style from 'styles/sedes.module.css'
 import { Card, Row } from 'react-bootstrap'
@@ -8,6 +9,14 @@ import styles from '../../styles/Service.module.css'
 const sedes = () => {
 	return (
 		<div>
+			<Head>
+				<title>Sedes - Logística y Transporte Atalaya S.A.S</title>
+				<meta
+					name='description'
+					content='En Atalaya S.A.S contamos con las siguientes sedes en el territorio nacional.'
+				/>
+				<link rel='icon' href='/favicon.png' />
+			</Head>
 			<Row>
 				<h1
 					className={`mt-4 ${styles.title_main} ${styles.form_title} `}
