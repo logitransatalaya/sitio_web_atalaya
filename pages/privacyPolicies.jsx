@@ -5,7 +5,7 @@ import Modal from 'components/Modal'
 import PrivacyPolicy from 'components/PrivacyPolicy'
 
 const privacyPolicies = () => {
-	const [showModal, setShowModal] = useState(true)
+	const [showModal, setShowModal] = useState(false)
 
 	const handleModal = () => {
 		setShowModal(!showModal)
