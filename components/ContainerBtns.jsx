@@ -5,8 +5,16 @@ import styled from '../styles/btnsContact.module.css'
 const ContainerBtns = () => {
 	return (
 		<div className={styled.container}>
-			<BtnsContacts icon='wspweb' title='Whatsapp' />
-			<BtnsContacts icon='viajesyturismoweb' title='viajes y turismo' />
+			<BtnsContacts
+				icon='wspweb'
+				iconResponsive='wspmobile'
+				title='Whatsapp'
+			/>
+			<BtnsContacts
+				icon='viajesyturismoweb'
+				iconResponsive='viajesyturismomobile'
+				title='viajes y turismo'
+			/>
 		</div>
 	)
 }
