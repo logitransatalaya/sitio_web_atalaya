@@ -117,6 +117,13 @@
 	color: #fff;
 }
 
+.info h1,
+.info h2,
+.info h3,
+.info h4 {
+	text-align: center;
+}
+
 @media (max-width: 600px) {
 	.info {
 		text-align: left;
