@@ -115,16 +115,6 @@
 	margin: 0 auto;
 }
 
-.datos {
-	margin: 8rem 0;
-	display: flex;
-	justify-content: center;
-}
-
-.datos img {
-	width: 90%;
-}
-
 @media (min-width: 550px) {
 	.CardContainer {
 		margin: 0 auto;

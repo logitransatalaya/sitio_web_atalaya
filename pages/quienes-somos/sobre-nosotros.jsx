@@ -57,9 +57,6 @@ const sobreNosotros = () => {
 							/>
 						</div>
 					</div>
-					<div className={styled.datos}>
-						<img src='/datosSobreNosotros.png' alt='datos' />
-					</div>
 				</div>
 			</Container>
 		</>
