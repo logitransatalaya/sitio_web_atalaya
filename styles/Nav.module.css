@@ -13,6 +13,7 @@
 	background-color: #fff;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 10000;
 }
 
 .logo {
@@ -29,6 +30,10 @@
 	align-items: center;
 	margin-bottom: 0;
 	gap: 1.5rem;
+}
+
+.menu ul {
+	padding: 0;
 }
 
 .menu li {
@@ -126,6 +131,10 @@
 }
 
 @media (max-width: 800px) {
+	.container_shadow {
+		position: relative;
+	}
+
 	.navbar {
 		flex-direction: column;
 		position: fixed;
@@ -147,6 +156,7 @@
 
 	.menu {
 		flex-direction: column;
+		padding: 0;
 	}
 
 	.handleMenu {
