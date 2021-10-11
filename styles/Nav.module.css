@@ -1,14 +1,18 @@
+.container_shadow {
+	position: sticky;
+	top: 0;
+	z-index: 10000;
+	background-color: #fff;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
 .navbar {
 	height: 80px;
 	display: flex;
-	position: sticky;
 	width: 100%;
-	top: 0;
+	background-color: #fff;
 	justify-content: space-between;
 	align-items: center;
-	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-	background-color: #fff;
-	z-index: 10000;
 }
 
 .logo {
@@ -24,10 +28,10 @@
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 0;
+	gap: 1.5rem;
 }
 
 .menu li {
-	margin-right: 1.5rem;
 	list-style: none;
 }
 
@@ -35,9 +39,9 @@
 	display: inline-block;
 	text-decoration: none;
 	color: #073d78;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	transition: color 0.3s;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .menu li a:hover {
@@ -50,13 +54,15 @@
 
 .subMenu > .iconListItem {
 	position: absolute;
-	right: -15px;
+	top: -1px;
+	right: -12px;
 	width: 8px;
 	transition: transform 0.5s;
 }
 
 .subMenu:hover > .iconListItem {
 	transform: rotate(90deg);
+	right: -13px;
 }
 
 .listSubMenu {
@@ -69,6 +75,10 @@
 	padding: 1rem;
 	display: none;
 	border-left: 1px solid #ff6c0c;
+}
+
+.listSubMenu li {
+	margin: 0;
 }
 
 .listSubMenu li a {
