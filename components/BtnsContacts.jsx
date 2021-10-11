@@ -8,10 +8,10 @@ const initialState = {
 }
 
 export const BtnsContacts = ({ icon, iconResponsive, title }) => {
-	const [showToolTip, setShowToolTip] = useState(true)
-	const [handleWidth, setHandleWidth] = useState(0)
-	const [hiddenTooltip, setHiddenTooltip] = useState(false)
 	const [image, setImage] = useState(initialState)
+	const [handleWidth, setHandleWidth] = useState(0)
+	const [showToolTip, setShowToolTip] = useState(true)
+	const [hiddenTooltip, setHiddenTooltip] = useState(false)
 
 	useEffect(() => {
 		const widthScreen = window.innerWidth
@@ -24,20 +24,20 @@ export const BtnsContacts = ({ icon, iconResponsive, title }) => {
 		const hiddenTooltip = () => {
 			handleWidth < 600 ? setHiddenTooltip(true) : setHiddenTooltip(false)
 			handleWidth < 600
-				? setImage({
-						...image,
+				? setImage((s) => ({
+						...s,
 						wsp: iconResponsive,
 						vt: iconResponsive
-				  })
-				: setImage({
-						...image,
+				  }))
+				: setImage((s) => ({
+						...s,
 						wsp: icon,
 						vt: icon
-				  })
+				  }))
 		}
 
 		hiddenTooltip()
-	}, [handleWidth])
+	}, [handleWidth, icon, iconResponsive])
 
 	useEffect(() => {
 		const handleToolTip = () => {
@@ -53,14 +53,16 @@ export const BtnsContacts = ({ icon, iconResponsive, title }) => {
 			{title === 'Whatsapp' ? (
 				<a
 					className={styled.acontainer}
-					href='https://wa.me/573006123886?text=Hablalo%20pai%20le%20habla%20el%20Kalixto'
+					href='https://wa.me/573145554782?text=Texto%20de%20prueba'
 					target='_blank'
+					rel='noreferrer'
 				>
 					<Image
 						src={`/icons/${image.wsp}.svg`}
 						width='100%'
 						height='100%'
 						className={styled.wsp}
+						alt=''
 					/>
 					{!hiddenTooltip && (
 						<span
