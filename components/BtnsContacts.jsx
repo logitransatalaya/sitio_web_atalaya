@@ -83,6 +83,7 @@ export const BtnsContacts = ({ icon, iconResponsive, title }) => {
 						width='100%'
 						height='100%'
 						className={styled.vt}
+						alt=''
 					/>
 
 					{!hiddenTooltip && (
