@@ -53,7 +53,7 @@ export const BtnsContacts = ({ icon, iconResponsive, title }) => {
 			{title === 'Whatsapp' ? (
 				<a
 					className={styled.acontainer}
-					href='https://wa.me/573145554782?text=Texto%20de%20prueba'
+					href='https://wa.me/573145554982'
 					target='_blank'
 					rel='noreferrer'
 				>

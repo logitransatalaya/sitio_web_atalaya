@@ -27,8 +27,6 @@ const SistemaGestionIntegrado = () => {
 		}
 	}, [showModal])
 
-	console.log(showModal)
-
 	return (
 		<>
 			<Head>

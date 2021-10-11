@@ -10,14 +10,14 @@ const PrivacyPolicy = () => {
 				inadecuado de la información puede dar lugar a varios tipos de
 				sanciones, entre ellas de tipo penal, contenidas en la Ley 1273
 				de 2009: Delitos Informáticos - Artículo 269 F. Violación de los
-				Datos Personales: "El que, sin estar facultado para ello, con
-				provecho propio o de un tercero, obtenga, compile, sustraiga,
-				ofrezca, venda, intercambie, envíe, compre, intercepte,
-				divulgue, modifique o emplee códigos personales, datos
-				personales contenidos en ficheros, archivos, bases de datos o
-				medios semejantes, incurrirá en pena de prisión de cuarenta y
-				ocho (48) a noventa y seis (96) meses y en multa de 100 a 1000
-				salarios mínimos legales mensuales vigentes".
+				Datos Personales: &quot;El que, sin estar facultado para ello,
+				con provecho propio o de un tercero, obtenga, compile,
+				sustraiga, ofrezca, venda, intercambie, envíe, compre,
+				intercepte, divulgue, modifique o emplee códigos personales,
+				datos personales contenidos en ficheros, archivos, bases de
+				datos o medios semejantes, incurrirá en pena de prisión de
+				cuarenta y ocho (48) a noventa y seis (96) meses y en multa de
+				100 a 1000 salarios mínimos legales mensuales vigentes&quot;.
 			</p>{' '}
 			<br />
 			<h2 style={{ textAlign: 'center' }}>

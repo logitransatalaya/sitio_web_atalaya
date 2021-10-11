@@ -265,12 +265,11 @@ const FormAbout = () => {
 						onChange={handleInputs}
 						name={'affair'}
 						value={affair}
-						onChange={handleInputs}
 					>
 						<option value='default' disabled hidden></option>
-						<option value='cotizacion'>Cotización</option>
-						<option value='inquietud'>Inquietud</option>
-						<option value='solicitudinfo'>
+						<option value='Cotización'>Cotización</option>
+						<option value='Inquietud.'>Inquietud</option>
+						<option value='Solicitud de información.'>
 							Solicitud de información
 						</option>
 						<option value='otro'>Otro</option>
