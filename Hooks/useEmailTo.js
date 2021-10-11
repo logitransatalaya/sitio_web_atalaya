@@ -1,18 +1,16 @@
-import { useEffect } from 'react'
-
 export const useEmailTo = () => {
 	const sendEmail = (body) => {
 		const { type_client, name, mail, phone, affair, comments } = body
 
 		window.open(
-			`mailto:jhonatanlezcano.plv@gmail.com?subject=${
-				affair || ''
-			}&body=${`<strong>Tipo de cliente:</strong> ${type_client}. <br>
-         <strong>nombre:</strong> ${name}. <br>
-         <strong>E-mail:</strong> ${mail}. <br>
-         <strong>Celular:</strong> ${phone}. <br>
-         <strong>Asunto:</strong> ${affair} <br>
-         <strong>Comentarios:</strong> ${comments}`}`
+			`mailto:developeratalaya1@transatalaya.com?subject=${
+				affair || 'Estoy interesado en contactarme con ustedes'
+			}&body=${`Tipo de cliente: ${type_client}. %0D%0A
+			nombre: ${name}. %0D%0A
+			E-mail: ${mail}. %0D%0A
+			Celular: ${phone}. %0D%0A
+			Asunto: ${affair}. %0D%0A
+			Comentarios: ${comments}. %0D%0A %0D%0A`}`
 		)
 	}
 
