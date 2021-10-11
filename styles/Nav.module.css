@@ -73,11 +73,12 @@
 
 .listSubMenu li a {
 	display: inline;
-	transition: margin-left 0.5s;
+	transition: transform 0.5s, color 0.5s;
 }
 
-.listSubMenu li a:hover {
-	margin-left: 0.5em;
+.listSubMenu li:hover a {
+	transform: translateX(0.5em);
+	color: #ff6c0c;
 }
 
 .listItem {
