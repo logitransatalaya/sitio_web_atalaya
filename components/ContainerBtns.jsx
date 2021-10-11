@@ -10,11 +10,11 @@ const ContainerBtns = () => {
 				iconResponsive='wspmobile'
 				title='Whatsapp'
 			/>
-			<BtnsContacts
+			{/* <BtnsContacts
 				icon='viajesyturismoweb'
 				iconResponsive='viajesyturismomobile'
 				title='viajes y turismo'
-			/>
+			/> */}
 		</div>
 	)
 }
