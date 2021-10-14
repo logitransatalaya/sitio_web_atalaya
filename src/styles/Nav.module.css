@@ -78,10 +78,6 @@
 	border-left: 1px solid #ff6c0c;
 }
 
-.listSubMenu li {
-	/* margin: 0; */
-}
-
 .listSubMenu li a {
 	display: inline;
 	transition: transform 0.5s, color 0.5s;
