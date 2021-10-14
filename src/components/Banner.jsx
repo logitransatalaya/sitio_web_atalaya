@@ -22,7 +22,7 @@ export const Banner = ({ url, urlMobile }) => {
 
 	return (
 		<div className={`${styles.container}`}>
-			<div className={`mt-5 mb-4  ${styles.card}`}>
+			<div className={`mb-4  ${styles.card}`}>
 				<div style={{ width: '100%', borderRadius: '10px' }}>
 					<img
 						src={`${image}`}

@@ -1,5 +1,4 @@
 import React from 'react'
-// import Head from 'next/head'
 import { Row } from 'react-bootstrap'
 import { Cards } from 'components/Cards'
 import { Button } from 'components/Button'

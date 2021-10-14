@@ -17,7 +17,7 @@ export const Sedes = () => {
 				<link rel='icon' href='/favicon.png' />
 			</Head> */}
 
-			<h3 className={`mt-5 ${styles.title_main} ${styles.form_title} `}>
+			<h3 className={` ${styles.title_main} ${styles.form_title} `}>
 				En Atalaya S.A.S contamos con las siguientes sedes en el
 				territorio nacional:
 			</h3>

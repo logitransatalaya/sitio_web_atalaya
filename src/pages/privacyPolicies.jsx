@@ -36,7 +36,7 @@ export const PrivacyPolicies = () => {
 				/>
 				<link rel='icon' href='/favicon.png' />
 			</Head> */}
-			<div style={{ marginBottom: '150px' }}>
+			<div style={{ marginBottom: '150px', paddingTop: '2rem' }}>
 				<Banner
 					url={'privacidad-de-datos.png'}
 					urlMobile={'politica-de-privacidad-mobile.png'}

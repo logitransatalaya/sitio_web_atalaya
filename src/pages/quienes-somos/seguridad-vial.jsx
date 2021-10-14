@@ -34,11 +34,11 @@ export const SeguridadVial = () => {
 				</title>
 				<meta
 					name='description'
-					content='Los trabajadores que manejen vehículos de propiedad y/o al servicio de LOGÍSITICA Y TRANSPORTE ATALAYA deberán respetar las normas planteadas en esta sesión.'
+					content='Los trabajadores que manejen vehículos de propiedad y/o al servici}o de LOGÍSITICA Y TRANSPORTE ATALAYA deberán respetar las normas planteadas en esta sesión.'
 				/>
 				<link rel='icon' href='/favicon.png' />
 			</Head> */}
-			<div className={`${styled.container}`}>
+			<div className={` pt-5 ${styled.container}`}>
 				<Banner
 					url={'../vial.png'}
 					urlMobile={'../seguridad-vial-mobile.png'}

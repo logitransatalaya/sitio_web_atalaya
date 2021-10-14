@@ -36,7 +36,7 @@ export const SistemaGestionIntegrado = () => {
 				/>
 				<link rel='icon' href='/favicon.png' />
 			</Head> */}
-			<div className={`${styled.containerSGI}`}>
+			<div className={`pt-5 ${styled.containerSGI}`}>
 				<Banner
 					url={'../gestion.png'}
 					urlMobile={'../gestion-integrado-mobile.png'}
