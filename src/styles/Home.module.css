@@ -35,7 +35,7 @@
 }
 
 .img3 {
-	background: url('../assets/primeraR.png');
+	background: url('../assets/terceraR.jpg');
 }
 
 .img {
@@ -220,7 +220,7 @@
 
 @media (min-width: 550px) {
 	.img1 {
-		background: url('../assets/primera.png');
+		background: url('../assets/primera.jpg');
 	}
 	.img2 {
 		background: url('../assets/segunda.png');
