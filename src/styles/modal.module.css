@@ -128,4 +128,9 @@
 	.info {
 		text-align: left;
 	}
+
+	.modal {
+		max-width: 95%;
+		max-height: 90vh;
+	}
 }
