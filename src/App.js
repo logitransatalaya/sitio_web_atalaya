@@ -13,43 +13,42 @@ import { SeguridadVial } from './pages/quienes-somos/seguridad-vial'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import { SistemaGestionIntegrado } from './pages/quienes-somos/sistema-gestion-integrado'
 
-
 function App() {
 	return (
 		<Router>
-      <ContainerBtns/>
-        <NavAtalaya />
-        <Switch>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route exact path='/servicios'>
-            <Servicios />
-          </Route>
-          <Route exact path='/contactenos'>
-            <Contactenos />
-          </Route>
-          <Route exact path='/dataTreatment'>
-            <DataTreatment />
-          </Route>
-          <Route exact path='/privacyPolicies'>
-            <PrivacyPolicies />
-          </Route>
-          {/* quienes somos */}
-          <Route exact path='/quienes-somos/sedes'>
-            <Sedes />
-          </Route>
-          <Route exact path='/quienes-somos/seguridad-vial'>
-            <SeguridadVial />
-          </Route>
-          <Route exact path='/quienes-somos/sistema-gestion-integrado'>
-            <SistemaGestionIntegrado />
-          </Route>
-          <Route exact path='/quienes-somos/sobre-nosotros'>
-            <SobreNosotros />
-          </Route>
-        </Switch>
-        <FooterAtalaya />
+			<ContainerBtns />
+			<NavAtalaya />
+			<Switch>
+				<Route exact path='/'>
+					<Home />
+				</Route>
+				<Route exact path='/servicios'>
+					<Servicios />
+				</Route>
+				<Route exact path='/contactenos'>
+					<Contactenos />
+				</Route>
+				<Route exact path='/dataTreatment'>
+					<DataTreatment />
+				</Route>
+				<Route exact path='/privacyPolicies'>
+					<PrivacyPolicies />
+				</Route>
+				{/* quienes somos */}
+				<Route exact path='/quienes-somos/sedes'>
+					<Sedes />
+				</Route>
+				<Route exact path='/quienes-somos/seguridad-vial'>
+					<SeguridadVial />
+				</Route>
+				<Route exact path='/quienes-somos/sistema-gestion-integrado'>
+					<SistemaGestionIntegrado />
+				</Route>
+				<Route exact path='/quienes-somos/sobre-nosotros'>
+					<SobreNosotros />
+				</Route>
+			</Switch>
+			<FooterAtalaya />
 		</Router>
 	)
 }

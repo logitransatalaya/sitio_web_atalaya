@@ -20,12 +20,7 @@ export const SobreNosotros = () => {
 			<Container>
 				<div className={styled.SobreNosotros}>
 					<div className={styled.initialTextContainer}>
-						<img
-							src='/sobrenosotros.png'
-							width='600'
-							height='330'
-							alt=''
-						/>
+						<img src='/sobrenosotros.png' alt='' />
 						<div>
 							<h3>Logística y Transporte ATALAYA S.A.S</h3>
 							<p>

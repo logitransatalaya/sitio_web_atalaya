@@ -31,12 +31,7 @@ export const Home = () => {
 				</div>
 				<div className={`${styled.NuestroAlcance}`}>
 					<div>
-						<img
-							src='/imgAlcance.png'
-							width='540'
-							height='370'
-							alt='Logotipo de atalaya'
-						/>
+						<img src='/imgAlcance.png' alt='Logotipo de atalaya' />
 					</div>
 					<div>
 						<h3>
