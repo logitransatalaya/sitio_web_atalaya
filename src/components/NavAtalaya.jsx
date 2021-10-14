@@ -6,6 +6,13 @@ import { Container } from './Container'
 
 export const NavAtalaya = () => {
 	const [stateNav, setStateNav] = useState(true)
+
+	const handleClick = () => {
+		if (window.innerWidth < 800) {
+			setStateNav(true)
+		}
+	}
+
 	return (
 		<div className={styles.container_shadow}>
 			<Container>
@@ -23,7 +30,9 @@ export const NavAtalaya = () => {
 					</span>
 					<ul className={styles.menu}>
 						<li>
-							<Link to='/'>INICIO</Link>
+							<Link to='/' onClick={handleClick}>
+								INICIO
+							</Link>
 						</li>
 						<li className={styles.subMenu}>
 							<div className={styles.iconListItem}>
@@ -59,7 +68,10 @@ export const NavAtalaya = () => {
 											<path d='M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z'></path>
 										</svg>
 									</div>
-									<Link to='/quienes-somos/sobre-nosotros'>
+									<Link
+										to='/quienes-somos/sobre-nosotros'
+										onClick={handleClick}
+									>
 										SOBRE NOSOTROS
 									</Link>
 								</li>
@@ -78,7 +90,12 @@ export const NavAtalaya = () => {
 											<path d='M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z'></path>
 										</svg>
 									</div>
-									<Link to='/quienes-somos/sedes'>SEDES</Link>
+									<Link
+										to='/quienes-somos/sedes'
+										onClick={handleClick}
+									>
+										SEDES
+									</Link>
 								</li>
 								<li className={styles.listItem}>
 									<div className={styles.iconListItem}>
@@ -95,7 +112,10 @@ export const NavAtalaya = () => {
 											<path d='M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z'></path>
 										</svg>
 									</div>
-									<Link to='/quienes-somos/seguridad-vial'>
+									<Link
+										to='/quienes-somos/seguridad-vial'
+										onClick={handleClick}
+									>
 										SEGURIDAD VIAL
 									</Link>
 								</li>
@@ -114,18 +134,25 @@ export const NavAtalaya = () => {
 											<path d='M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z'></path>
 										</svg>
 									</div>
-									<Link to='/quienes-somos/sistema-gestion-integrado'>
+									<Link
+										to='/quienes-somos/sistema-gestion-integrado'
+										onClick={handleClick}
+									>
 										SISTEMA DE GESTIÓN INTEGRADO
 									</Link>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<Link to='/servicios'>SERVICIOS</Link>
+							<Link to='/servicios' onClick={handleClick}>
+								SERVICIOS
+							</Link>
 						</li>
 
 						<li>
-							<Link to='/contactenos'>CONTACTENOS</Link>
+							<Link to='/contactenos' onClick={handleClick}>
+								CONTACTENOS
+							</Link>
 						</li>
 					</ul>
 				</nav>
@@ -134,7 +161,7 @@ export const NavAtalaya = () => {
 				className={styles.icons_handleMenu}
 				onClick={() => setStateNav(!stateNav)}
 			>
-				<BtnToggle />
+				<BtnToggle state={stateNav} />
 			</div>
 		</div>
 	)

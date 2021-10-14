@@ -1,17 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from 'styles/BtnToggle.module.css'
 
-export const BtnToggle = () => {
-	const [stateToggle, setStateToggle] = useState(true)
-
-	const styleToggle = stateToggle
+export const BtnToggle = ({ state }) => {
+	console.log('entra')
+	const styleToggle = state
 		? styles.toggle
 		: `${styles.toggle} ${styles.active}`
 
-	return (
-		<div
-			className={styleToggle}
-			onClick={() => setStateToggle(!stateToggle)}
-		></div>
-	)
+	return <div className={styleToggle}></div>
 }
