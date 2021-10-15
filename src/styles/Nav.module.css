@@ -142,8 +142,25 @@
 		margin-left: 0;
 	}
 
+	.box_click {
+		position: fixed;
+		height: 100vh;
+		width: 50%;
+		right: 0;
+		top: 0;
+		display: block;
+	}
+
+	.box_click_none {
+		display: none;
+	}
+
 	.icons_handleMenu {
 		display: block;
+	}
+
+	.icons_handleMenu_none {
+		display: none;
 	}
 
 	.menu {
