@@ -26,22 +26,21 @@
 	background-color: #ff6c0c;
 }
 
-.img1 {
-	background: url('../assets/primeraR.png');
+.slider {
+	height: auto;
+	width: auto;
 }
 
-.img2 {
-	background: url('../assets/segundaR.png');
+.slider img {
+	width: 100%;
 }
 
-.img3 {
-	background: url('../assets/terceraR.jpg');
+.imgNormal {
+	display: none;
 }
 
-.img {
-	height: 30rem;
-	background-size: cover;
-	background-repeat: no-repeat;
+.imgResponsive {
+	display: initial;
 }
 
 .CardContainer {
@@ -218,22 +217,17 @@
 	color: #ff6c0c;
 }
 
-@media (min-width: 550px) {
-	.img1 {
-		background: url('../assets/primera.jpg');
-	}
-	.img2 {
-		background: url('../assets/segunda.png');
-	}
-	.img3 {
-		background: url('../assets/tercera.png');
-	}
-	.img {
-		height: 40rem;
-		background-size: cover;
-		background-repeat: no-repeat;
+@media (min-width: 780px) {
+	.imgNormal {
+		display: initial;
 	}
 
+	.imgResponsive {
+		display: none;
+	}
+}
+
+@media (min-width: 550px) {
 	.CardContainer {
 		margin: 0 auto;
 		margin-top: 2rem;

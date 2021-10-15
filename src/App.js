@@ -15,7 +15,7 @@ import { SistemaGestionIntegrado } from './pages/quienes-somos/sistema-gestion-i
 
 function App() {
 	return (
-		<Router>
+		<Router hashType='noslash'>
 			<div>
 				<NavAtalaya />
 				<ContainerBtns />

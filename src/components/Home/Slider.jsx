@@ -7,19 +7,40 @@ export const Slider = () => {
 		<div className={styled.slider}>
 			<Carousel>
 				<Carousel.Item>
-					<div
-						className={`d-block w-100 ${styled.img1} ${styled.img}`}
-					></div>
+					<img
+						className={styled.imgNormal}
+						src='/slider/primera.jpg'
+						alt=''
+					/>
+					<img
+						className={styled.imgResponsive}
+						src='/slider/primeraR.png'
+						alt=''
+					/>
 				</Carousel.Item>
 				<Carousel.Item>
-					<div
-						className={`d-block w-100 ${styled.img2} ${styled.img}`}
-					></div>
+					<img
+						className={styled.imgNormal}
+						src='/slider/segunda.png'
+						alt=''
+					/>
+					<img
+						className={styled.imgResponsive}
+						src='/slider/segundaR.png'
+						alt=''
+					/>
 				</Carousel.Item>
 				<Carousel.Item>
-					<div
-						className={`d-block w-100 ${styled.img3} ${styled.img}`}
-					></div>
+					<img
+						className={styled.imgNormal}
+						src='/slider/tercera.png'
+						alt=''
+					/>
+					<img
+						className={styled.imgResponsive}
+						src='/slider/terceraR.png'
+						alt=''
+					/>
 				</Carousel.Item>
 			</Carousel>
 		</div>
