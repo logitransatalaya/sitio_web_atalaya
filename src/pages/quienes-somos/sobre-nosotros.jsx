@@ -34,7 +34,7 @@ export const SobreNosotros = () => {
 								contenedores (puertos Cartagena) y alianzas en
 								transporte OTM.
 							</p>
-							<Link to='/quienes-somos/sobre-nosotros'>
+							<Link to='/contactenos'>
 								¡Solicita una cotización!
 							</Link>
 						</div>
