@@ -9,7 +9,7 @@ export const Slider = () => {
 				<Carousel.Item>
 					<img
 						className={styled.imgNormal}
-						src='/slider/primera.jpg'
+						src='/slider/primera.png'
 						alt=''
 					/>
 					<img
