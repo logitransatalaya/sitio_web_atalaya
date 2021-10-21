@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import { Container } from 'components/Container'
 import styled from 'styles/Sobre-nosotros.module.css'
@@ -7,7 +8,7 @@ import { Card } from 'components/sobre-nosotros/Card'
 export const SobreNosotros = () => {
 	return (
 		<>
-			{/* <Head>
+			<Helmet>
 				<title>
 					Sobre Nosotros - Logística y Transporte Atalaya S.A.S
 				</title>
@@ -16,7 +17,7 @@ export const SobreNosotros = () => {
 					content='Es una empresa Colombiana de Logística y Transporte, que cumple con todos los estándares de calidad en el servicio y confiabilidad,contamos con talento experto en logística, modelos de gestión en seguridad y control.'
 				/>
 				<link rel='icon' to='/favicon.png' />
-			</Head> */}
+			</Helmet>
 			<Container>
 				<div className={styled.SobreNosotros}>
 					<div className={styled.initialTextContainer}>

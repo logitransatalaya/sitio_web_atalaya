@@ -1,12 +1,12 @@
 import React from 'react'
-// import Head from 'next/head'
+import { Helmet } from 'react-helmet'
 import styled from 'styles/About.module.css'
 import FormAbout from 'components/Contactenos/FormAbout'
 
 export const Contactenos = () => {
 	return (
 		<>
-			{/* <Head>
+			<Helmet>
 				<title>
 					Contáctenos - Logística y Transporte Atalaya S.A.S
 				</title>
@@ -15,7 +15,7 @@ export const Contactenos = () => {
 					content='Contáctenos. Déjenos conocer su requerimiento y pronto nos comunicaremos.'
 				/>
 				<link rel='icon' href='/favicon.png' />
-			</Head> */}
+			</Helmet>
 			<div className={styled.formContainer}>
 				<FormAbout />
 			</div>

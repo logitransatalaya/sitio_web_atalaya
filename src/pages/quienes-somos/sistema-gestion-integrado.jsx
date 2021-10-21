@@ -1,6 +1,7 @@
 import Modal from 'components/Modal'
-import React, { useState, useEffect } from 'react'
+import { Helmet } from 'react-helmet'
 import { Banner } from 'components/Banner'
+import React, { useState, useEffect } from 'react'
 import CardInfoBanner from 'components/CardInfoBanner'
 import SistemaGestionInfo from 'components/SistemaGestionInfo'
 import styled from '../../styles/sistemaGestionIntegrado.module.css'
@@ -28,14 +29,14 @@ export const SistemaGestionIntegrado = () => {
 
 	return (
 		<>
-			{/* <Head>
+			<Helmet>
 				<title>SST - Logística y Transporte Atalaya S.A.S</title>
 				<meta
 					name='description'
 					content='Política integral de calidad, seguridad, salud en el trabajo, ambiente, responsabilidad social empresarial y gestión de activos.'
 				/>
 				<link rel='icon' href='/favicon.png' />
-			</Head> */}
+			</Helmet>
 			<div className={`pt-5 ${styled.containerSGI}`}>
 				<Banner
 					url={'../gestion.png'}

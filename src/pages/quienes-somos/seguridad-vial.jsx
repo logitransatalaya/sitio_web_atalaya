@@ -4,6 +4,7 @@ import { Banner } from 'components/Banner'
 import styled from 'styles/seguridadvial.module.css'
 import CardInfoBanner from 'components/CardInfoBanner'
 import RoadSafetyPolicies from 'components/RoadSafetyPolicies'
+import { Helmet } from 'react-helmet'
 
 export const SeguridadVial = () => {
 	const [showModal, setShowModal] = useState(false)
@@ -28,7 +29,7 @@ export const SeguridadVial = () => {
 
 	return (
 		<>
-			{/* <Head>
+			<Helmet>
 				<title>
 					Seguridad Vial - Logística y Transporte Atalaya S.A.S
 				</title>
@@ -37,7 +38,7 @@ export const SeguridadVial = () => {
 					content='Los trabajadores que manejen vehículos de propiedad y/o al servici}o de LOGÍSITICA Y TRANSPORTE ATALAYA deberán respetar las normas planteadas en esta sesión.'
 				/>
 				<link rel='icon' href='/favicon.png' />
-			</Head> */}
+			</Helmet>
 			<div className={` pt-5 ${styled.container}`}>
 				<Banner
 					url={'../vial.png'}
