@@ -42,7 +42,7 @@ export const SeguridadVial = () => {
 			<div className={` pt-5 ${styled.container}`}>
 				<Banner
 					url={'../vial.png'}
-					urlMobile={'../seguridad-vial-mobile.png'}
+					urlMobile={'../sgd-vial-mobile.png'}
 				/>
 				<CardInfoBanner handleModal={handleModal}>
 					<p>
