@@ -45,11 +45,13 @@ export const Home = () => {
 							competente, y una <b>infraestructura tecnológica</b>{' '}
 							a la vanguardia que soporta nuestra operación.
 						</p>
-						<h5>
+							<div className={styled.ConoceMas}>
+								<h5>
 							<Link to='/quienes-somos/sobre-nosotros'>
 								Conoce más
 							</Link>
-						</h5>
+							</h5>
+							</div>
 					</div>
 				</div>
 				<div className={styled.ServiceCard}>
