@@ -36,14 +36,14 @@ export const SobreNosotros = () => {
 								transporte OTM.
 							</p>
 							<div className={styled.SolicitaCotizacion}>
-							<Link to='/contactenos'>
-								¡Solicita una cotización!
-							</Link>
+								<Link to='/contactenos'>
+									¡Solicita una cotización!
+								</Link>
 							</div>
 						</div>
 					</div>
 					<div className={styled.SecondPartContainer}>
-						<h4>¿PORQUÉ ELEGIRNOS?</h4>
+						<h4>¿POR QUÉ ELEGIRNOS?</h4>
 						<div className={styled.CardContainer}>
 							<Card icon='security' title='Seguridad' />
 							<Card icon='paper' title='Control' />

@@ -54,10 +54,8 @@
 
 .card {
 	width: 100%;
-	height: 25rem;
-	position: relative;
+	height: 23rem;
 	font-family: 'Raleway', sans-serif;
-	padding: 1rem;
 	text-align: justify;
 	font-size: 0.95rem;
 	border-radius: 0.8rem;
@@ -65,52 +63,33 @@
 	box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.349);
 }
 
-.card h3 {
+.cardTextcontent {
+	padding: 1.5rem;
+}
+
+.cardTextcontent h3 {
 	font-family: 1.1rem;
 	font-weight: 700;
 	color: #053b77;
 	text-align: center;
 }
 
-.card div:nth-of-type(3) {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	display: flex;
-	justify-content: flex-end;
+.imageContainer {
+	height: 9rem;
+	width: 100%;
+	border-radius: 0.8rem 0.8rem 0 0;
+	overflow: hidden;
 }
 
-.card div:nth-of-type(3) p {
-	cursor: pointer;
-	margin: 0;
-	width: max-content;
-	background-color: #053b77;
-	color: white;
-	padding: 0 1rem;
-	font-weight: 600;
-	font-size: 1.5rem;
-	border-radius: 0 0 0.5rem 0;
+.imageContainer img {
+	width: 100%;
+	height: 100%;
+	border-radius: 0.8rem 0.8rem 0 0;
+	transition: transform 0.5s;
 }
 
-.iconsContainer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 0.5rem;
-	box-shadow: -0.5rem -0.5rem 0 #fbe2dd;
-	background-color: #ff6c0c;
-	height: 5rem;
-	margin: 0 auto;
-	width: 5rem;
-}
-
-.card:hover .iconsContainer {
-	background-color: white;
-	transition: 0.5s ease-in-out;
-}
-
-.card a {
-	text-decoration: none;
+.card:hover img {
+	transform: scale(1.1);
 }
 
 .NuestroAlcance {
@@ -244,10 +223,6 @@
 	.card {
 		transition: 0.5s ease-in-out;
 		width: 23rem;
-		height: 22rem;
-		padding: 1rem;
-		border-radius: 0.8rem;
-		box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.349);
 	}
 
 	.card:hover {

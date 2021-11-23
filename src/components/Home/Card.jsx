@@ -1,32 +1,15 @@
-import { Link } from 'react-router-dom'
-import React, { useState } from 'react'
+import React from 'react'
+// import { Link } from 'react-router-dom'
 import styled from 'styles/Home.module.css'
 
-export const HomeCard = ({ icon, title }) => {
-	const [color, setColor] = useState('')
-
-	const handleHover = (type) => {
-		if (type === 'hover') setColor('Orange')
-		if (type === 'unHover') setColor('')
-	}
-
+export const HomeCard = ({ type, title }) => {
 	return (
-		<div
-			onMouseEnter={() => handleHover('hover')}
-			onMouseLeave={() => handleHover('unHover')}
-			className={`${styled.card}`}
-		>
-			<div className={styled.iconsContainer}>
-				<img
-					src={`/icons/${icon + color}.svg`}
-					width='30'
-					height='30'
-					alt=''
-				/>
+		<div className={`${styled.card}`}>
+			<div className={styled.imageContainer}>
+				<img src={`/homeCards/${type}.png`} alt='' />
 			</div>
-			<div style={{ padding: 0, marginTop: '1rem' }}>
-				<h3>{title}</h3>
-				{icon === 'users' && (
+			<div className={styled.cardTextcontent}>
+				{type === 'quienes-somos' && (
 					<div>
 						<strong>Logística y transporte ATALAYA S.A.S</strong> es
 						una empresa que ha sido conformada con el propósito de
@@ -36,7 +19,7 @@ export const HomeCard = ({ icon, title }) => {
 						conformada por un gran equipo de trabajo íntegro.
 					</div>
 				)}
-				{icon === 'box' && (
+				{type === 'mision' && (
 					<div>
 						Como <strong>ATALAYA S.A.S</strong> somos una compañia
 						que brinda soluciones en logística integral de altos
@@ -45,7 +28,7 @@ export const HomeCard = ({ icon, title }) => {
 						poderoso énfasis social.
 					</div>
 				)}
-				{icon === 'truck' && (
+				{type === 'vision' && (
 					<div>
 						<strong>ATALAYA S.A.S</strong> en el año 2025 tendrá
 						presencia en los 32 departamentos de Colombia para
@@ -56,11 +39,11 @@ export const HomeCard = ({ icon, title }) => {
 					</div>
 				)}
 			</div>
-			<div>
+			{/* <div>
 				<Link to='/'>
 					<p>+</p>
 				</Link>
-			</div>
+			</div> */}
 		</div>
 	)
 }

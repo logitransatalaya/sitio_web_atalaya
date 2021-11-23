@@ -25,9 +25,9 @@ export const Home = () => {
 					<br />y adaptadas a las necesidades de los clientes
 				</h2>
 				<div className={styled.CardContainer}>
-					<HomeCard icon='users' title='QUIÉNES SOMOS' />
-					<HomeCard icon='box' title='MISIÓN' />
-					<HomeCard icon='truck' title='VISIÓN' />
+					<HomeCard type='quienes-somos' />
+					<HomeCard type='mision' />
+					<HomeCard type='vision' />
 				</div>
 				<div className={`${styled.NuestroAlcance}`}>
 					<div>
@@ -45,13 +45,13 @@ export const Home = () => {
 							competente, y una <b>infraestructura tecnológica</b>{' '}
 							a la vanguardia que soporta nuestra operación.
 						</p>
-							<div className={styled.ConoceMas}>
-								<h5>
-							<Link to='/quienes-somos/sobre-nosotros'>
-								Conoce más
-							</Link>
+						<div className={styled.ConoceMas}>
+							<h5>
+								<Link to='/quienes-somos/sobre-nosotros'>
+									Conoce más
+								</Link>
 							</h5>
-							</div>
+						</div>
 					</div>
 				</div>
 				<div className={styled.ServiceCard}>

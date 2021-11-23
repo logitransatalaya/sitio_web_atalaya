@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styled from 'styles/Home.module.css'
+import styled from 'styles/Service.module.css'
 
 export const Card = ({ icon, title }) => {
 	const [color, setColor] = useState('')
