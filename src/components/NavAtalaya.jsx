@@ -56,7 +56,7 @@ export const NavAtalaya = () => {
 									fontSize: '.9rem'
 								}}
 							>
-								QUIENES SOMOS
+								QUIÉNES SOMOS
 							</b>
 							<ul className={styles.listSubMenu}>
 								<li className={styles.listItem}>
