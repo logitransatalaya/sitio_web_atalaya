@@ -1,5 +1,5 @@
-import React from 'react'
 import { Helmet } from 'react-helmet'
+import React, { useEffect } from 'react'
 import { Button } from 'components/Button'
 import style from 'styles/sedes.module.css'
 import { Card, Row } from 'react-bootstrap'
@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from '../../styles/Service.module.css'
 
 export const Sedes = () => {
+	useEffect(() => window.scrollTo(0, 0), [])
 	return (
 		<div>
 			<Helmet>

@@ -1,11 +1,13 @@
-import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Row } from 'react-bootstrap'
+import React, { useEffect } from 'react'
 import { Cards } from 'components/Cards'
 import { Button } from 'components/Button'
 import styles from '../styles/Service.module.css'
 
 export const Servicios = () => {
+	useEffect(() => window.scrollTo(0, 0), [])
+
 	return (
 		<>
 			<Helmet>

@@ -49,24 +49,18 @@ export const FooterAtalaya = () => {
 							<b>Correos</b>
 							<ul>
 								<li className={styles.emails}>
-									servicioalcliente@logitransatalaya.com
+									gerencialogistica@logitransatalaya.com
 								</li>
 								<li className={styles.emails}>
-									gerencia@logitransatalaya.com
+									operador2@logitransatalaya.com
 								</li>
 								<li className={styles.emails}>
-									contabilidad@logitransatalaya.com
-								</li>
-								<li className={styles.emails}>
-									logistica@logitransatalaya.com
-								</li>
-								<li className={styles.emails}>
-									servicioalcliente@logitransatalaya.com
+									operador3@logitransatalaya.com
 								</li>
 							</ul>
 							<br />
 							<b>Telefonos</b>
-							<p>(+57) 314 555 4981 - (+57) 314 555 4761</p>
+							<p>(+57) 312 845 2146 - (+57) 314 555 4982</p>
 						</div>
 						<div className={styles.content3}>
 							<h5 className={styles.footer_title}>

@@ -1,10 +1,10 @@
 import Modal from 'components/Modal'
-import React, { useState, useEffect } from 'react'
+import { Helmet } from 'react-helmet'
 import { Banner } from 'components/Banner'
+import React, { useState, useEffect } from 'react'
 import styled from 'styles/seguridadvial.module.css'
 import CardInfoBanner from 'components/CardInfoBanner'
 import RoadSafetyPolicies from 'components/RoadSafetyPolicies'
-import { Helmet } from 'react-helmet'
 
 export const SeguridadVial = () => {
 	const [showModal, setShowModal] = useState(false)

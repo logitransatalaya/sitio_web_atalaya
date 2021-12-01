@@ -1,11 +1,13 @@
-import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
 import { Container } from 'components/Container'
 import styled from 'styles/Sobre-nosotros.module.css'
 import { Card } from 'components/sobre-nosotros/Card'
 
 export const SobreNosotros = () => {
+	useEffect(() => window.scrollTo(0, 0), [])
+
 	return (
 		<>
 			<Helmet>

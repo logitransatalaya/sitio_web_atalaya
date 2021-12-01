@@ -1,9 +1,11 @@
-import React from 'react'
 import { Helmet } from 'react-helmet'
+import React, { useEffect } from 'react'
 import styled from 'styles/About.module.css'
 import FormAbout from 'components/Contactenos/FormAbout'
 
 export const Contactenos = () => {
+	useEffect(() => window.scrollTo(0, 0), [])
+
 	return (
 		<>
 			<Helmet>

@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Map } from 'components/Map'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
@@ -8,6 +9,8 @@ import { HomeCard } from 'components/Home/Card'
 import { Container } from 'components/Container'
 
 export const Home = () => {
+	useEffect(() => window.scrollTo(0, 0), [])
+
 	return (
 		<div className={styled.container}>
 			<Helmet>
