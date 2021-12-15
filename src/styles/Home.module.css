@@ -57,6 +57,7 @@
 	height: 23rem;
 	font-family: 'Raleway', sans-serif;
 	text-align: justify;
+	word-break: break-all;
 	font-size: 0.95rem;
 	border-radius: 0.8rem;
 	color: #053b77;
@@ -94,6 +95,7 @@
 
 .NuestroAlcance {
 	text-align: justify;
+	word-break: break-all;
 	margin-top: 5rem;
 	color: #053b77;
 	display: grid;
@@ -236,8 +238,9 @@
 
 	.NuestroAlcance p {
 		font-size: 1.2rem;
-		text-align: justify;
+		word-break: normal;
 	}
+
 	.ServiceCard p {
 		width: 42%;
 	}

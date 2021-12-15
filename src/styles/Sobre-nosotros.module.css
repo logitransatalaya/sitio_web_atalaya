@@ -19,11 +19,12 @@
 .CardContainer p {
 	font-size: 1.15rem !important;
 	margin-top: 2rem;
+	text-align: justify;
+	word-break: break-all;
 }
 
 .SolicitaCotizacion {
 	text-align: center;
-
 }
 
 .NuestroAlcance a {

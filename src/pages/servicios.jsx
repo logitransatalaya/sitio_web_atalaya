@@ -1,5 +1,4 @@
 import { Helmet } from 'react-helmet'
-import { Row } from 'react-bootstrap'
 import React, { useEffect } from 'react'
 import { Cards } from 'components/Cards'
 import { Button } from 'components/Button'
@@ -21,16 +20,14 @@ export const Servicios = () => {
 				<link rel='icon' href='/favicon.png' />
 			</Helmet>
 			<div className={`container ${styles.container_service}`}>
-				<Row>
-					<h1 className={`${styles.title_main} ${styles.form_title}`}>
-						En{' '}
-						<span className={`${styles.subtitle_main}`}>
-							ATALAYA S.A.S{' '}
-						</span>
-						gestionamos la logística de su empresa prestando
-						servicios especializados en:
-					</h1>
-				</Row>
+				<h1 className={`${styles.title_main} ${styles.form_title}`}>
+					En{' '}
+					<span className={`${styles.subtitle_main}`}>
+						ATALAYA S.A.S{' '}
+					</span>
+					gestionamos la logística de su empresa prestando servicios
+					especializados en:
+				</h1>
 				<Cards />
 				<Button
 					text={'¡SOLICITA UNA COTIZACION!'}
