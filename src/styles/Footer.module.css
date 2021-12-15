@@ -44,6 +44,10 @@
 	padding-top: 1em;
 }
 
+.content2 li {
+	word-break: break-all;
+}
+
 .content3 {
 	padding-top: 1em;
 }
