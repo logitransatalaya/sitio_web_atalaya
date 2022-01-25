@@ -3,7 +3,7 @@ export const useEmailTo = () => {
 		const { type_client, name, mail, phone, affair, comments } = body
 
 		window.open(
-			`mailto:developeratalaya1@transatalaya.com?subject=${
+			`mailto:servicioalcliente@logitransatalaya.com?subject=${
 				affair || 'Estoy interesado en contactarme con ustedes'
 			}&body=${`Tipo de cliente: ${type_client}. %0D%0A
 			nombre: ${name}. %0D%0A
