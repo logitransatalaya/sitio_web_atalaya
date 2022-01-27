@@ -59,7 +59,7 @@ export const Sedes = () => {
 							</Card.Text>
 
 							<Card.Text className={`${style.address}`}>
-								<b>DIRECCIÓN: </b> Calle 20 E # 45 - 39 OF. 201
+								<b>DIRECCIÓN: </b> Cl. 22d #45 - 39 OF. 201
 							</Card.Text>
 						</Card.Body>
 					</Card>
