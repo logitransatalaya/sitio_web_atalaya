@@ -56,16 +56,15 @@
 	width: 100%;
 	height: 23rem;
 	font-family: 'Raleway', sans-serif;
-	text-align: justify;
-	word-break: break-all;
-	font-size: 0.95rem;
+	text-align: center;
+	font-size: 1rem;
 	border-radius: 0.8rem;
 	color: #053b77;
 	box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.349);
 }
 
 .cardTextcontent {
-	padding: 1.5rem;
+	padding: 2rem 1rem 1rem 1rem;
 }
 
 .cardTextcontent h3 {
