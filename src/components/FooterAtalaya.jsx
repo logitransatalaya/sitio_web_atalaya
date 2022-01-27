@@ -59,18 +59,15 @@ export const FooterAtalaya = () => {
 							<b>Correos</b>
 							<ul>
 								<li className={styles.emails}>
+									servicioalcliente@logitransatalaya.com
+								</li>
+								<li className={styles.emails}>
 									gerencialogistica@logitransatalaya.com
-								</li>
-								<li className={styles.emails}>
-									operador2@logitransatalaya.com
-								</li>
-								<li className={styles.emails}>
-									operador3@logitransatalaya.com
 								</li>
 							</ul>
 							<br />
 							<b>Telefonos</b>
-							<p>(+57) 312 845 2146 - (+57) 314 555 4982</p>
+							<p>(+57) 314 555 4981 - (+57) 314 555 4982</p>
 						</div>
 						<div className={styles.content3}>
 							<h5 className={styles.footer_title}>
@@ -99,7 +96,7 @@ export const FooterAtalaya = () => {
 				<Container>
 					<p style={{ marginBottom: '0' }}>
 						<small>
-							© Copyright 2021 -{' '}
+							© Copyright {new Date().getFullYear()} -{' '}
 							<b>Logística y Transporte Atalaya S.A.S</b> -
 							Colombia
 						</small>
