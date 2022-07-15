@@ -8,6 +8,8 @@
 
 .card_service {
 	width: 100%;
+	width: 278px;
+	height: 270px;
 	display: flex;
 	border-radius: 1em;
 	justify-content: center;
@@ -138,7 +140,9 @@
 .row {
 	margin: 0 auto;
 	gap: 1.8rem;
-	display: grid;
+	display: flex;
+	justify-content:center ;
+	flex-wrap: wrap;
 	grid-template-columns: repeat(4, 278px);
 	grid-template-rows: repeat(2, 270px);
 	justify-content: center;

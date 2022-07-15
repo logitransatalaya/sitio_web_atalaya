@@ -8,11 +8,10 @@ export const Cards = () => {
 			<CardService image={'/logistica.png'} />
 			<CardService image={'/transporte.png'} />
 			<CardService image={'/bodega.png'} />
-			<CardService image={'/especiales.png'} />
+			<CardService image={'/especiales.jpg'} />
 			<CardService image={'/consultoria.png'} />
 			<CardService image={'/alquiler.png'} />
 			<CardService image={'/mensajeria.png'} />
-			<CardService image={'/software.png'} />
 		</div>
 	)
 }

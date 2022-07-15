@@ -159,6 +159,17 @@ export const NavAtalaya = () => {
 								CONTACTENOS
 							</Link>
 						</li>
+
+						<li>
+							<a
+								//target='_blank'
+								rel='noreferrer'
+								onClick={handleClick}
+								href='/blog'
+							>
+								BLOG
+							</a>
+						</li>
 					</ul>
 				</nav>
 				<div
